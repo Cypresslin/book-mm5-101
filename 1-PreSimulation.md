@@ -5,7 +5,7 @@
 ## TERRAIN 建立地形資料
 1.  **解壓縮 TERRAIN.tar.gz：** ```tar –zxvf TERRAIN.tar.gz```
 2.  **載入必要之地形、地表資料**<br>
-地形高度以及地表分類資料是需要另外下載的，請至 [ftp://ftp.ucar.edu/mesouser/MM5V3/TERRAIN_DATA/](ftp://ftp.ucar.edu/mesouser/MM5V3/TERRAIN_DATA/) 下載需要的資料 <br>
+地形高度以及地表分類資料是需要另外下載的，請至 [ftp://ftp.ucar.edu/mesouser/MM5V3/TERRAIN_DATA/](ftp://ftp.ucar.edu/mesouser/MM5V3/TERRAIN_DATA/) 下載需要的資料，在這個 FTP 站裡你會看到 <br>
 *由於這些資料檔案不小，若您為工作站管理者可以考慮讓大家共用同一份資料以減少空間的浪費*
 3.  **編譯 TERRAIN：**```make > LOG```
 4. **生成 terrain.deck**：```make terrain.deck```
