@@ -7,9 +7,9 @@
 2.  **載入必要之地形、地表資料**<br>
 地形高度以及地表分類資料是需要另外下載的<br>
 3.  **編譯 TERRAIN：**```make > LOG```
-4. 生成 terrain.deck：```make terrain.deck```
-5. 修改 terrain.deck
-6. 執行 TERRAIN [./terrain.deck]
+4. **生成 terrain.deck**：```make terrain.deck```
+5. **修改 terrain.deck**
+6. **製作地形資料** [./terrain.deck]
 
 ### 常見問題
 　　若在製作 30s 的地形時遇上問題，其中一個可能原因就是有缺檔或 30 秒的檔案有問題所造成的，最可能會出現的錯誤訊息是：<br>
