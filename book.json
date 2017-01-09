@@ -1,3 +1,16 @@
 {
-    "plugins": ["mathjax"]
+    "plugins": ["disqus", "mathjax"],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "nothing-here"
+        },
+        "sharing": {
+            "facebook": true,
+            "twitter": true,
+            "google": true,
+            "all": [
+                "facebook", "google", "twitter", "instapaper"
+            ]
+        }
+    }
 }
