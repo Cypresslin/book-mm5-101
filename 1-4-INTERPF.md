@@ -6,7 +6,7 @@ INTERPF 程式主要目的為垂直插值，將氣象要素場（風場、質量
 
 1. **解壓縮**：`tar –zxvf INTERPF.tar.gz`
 2. **編譯**：`make`
-3. **修改 namelist.input**： 
+3. **修改 namelist.input**：   
    * &record0 的部份請指定 input file
    * &record1 的部份為起始時間與結束時間
    * &record2 的部份為 σ - Level 的設定，以楊明仁教授的 [Precipitation Structure and Processes of Typhoon Nari (2001): A Modeling Propsective](http://rain.as.ntu.edu.tw/2003radarconf_mingjen.pdf) 裡面的設定為例則是 32 層：
@@ -18,7 +18,7 @@ INTERPF 程式主要目的為垂直插值，將氣象要素場（風場、質量
    * &record3 的部份為模式基本物理參數設定
    （後面還有一些其他的設定）
    input file 會需要 REGRID_DOMAIN# 或是 LITTLE_R_DOMAIN# 或者是 RAWINS_DOAMIN# 三者之一的檔案位置（這裡的#為槽狀網格之編號）,端看前一步是採用哪支程式去產生初始場資料。(最後一定要加 /,inputfile= ‘../REGRID_DOMAIN1’ / )
-4. **執行程式**： `./interpf` 
+4. **執行程式**： `./interpf`  
    程式執行後，INTERPF 的輸出檔（MMINPUT_DOMAIN#、BDYOUT_DOMAIN#、LOWBDY_DOMAIN#）即為 MM5 進行模擬時所需輸入的資料。
 
 到此前置資料的處理即告一段落！接下來就要準備進行模擬了。

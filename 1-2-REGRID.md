@@ -11,7 +11,7 @@ REGRID概略圖：
 
 1. **解壓縮REGRID.tar.gz**：`tar –zxvf REGRID.tar.gz`
 2. **進行編譯（必要時請修改Makefile）**：`make`
-3. **修改 REGRID/pregrid/pregrid.csh**： 
+3. **修改 REGRID/pregrid/pregrid.csh**：  
    請在這個 c-shell 腳本中設定好你資料格式、所在位置以及時間，一般來說是使用 GRIB 格式資料。裡面可能會需要修改的東西如下：
    ```
    set DataDir = 你資料所在的位置
@@ -70,9 +70,9 @@ REGRID概略圖：
    ```
 4. **將 pregrid.csh 加上可以執行的權限**：`chmod u+x pregrid.csh`
 5. **執行 pregrid.csh**：`./pregird.csh`
-6. **檢查輸出**： 
+6. **檢查輸出**：  
    確認 pregrid 程式產生了所需時間的資料檔。在 REGRID/pregrid/ 下，檢查每個時間上都產生了哪些變數場（ex: FILE:yyyy-mm-dd\_hh, SNOW\_FILE:yyyy-mm-dd\_hh, SST\_FILE:yyyy-mm-dd\_hh 等等）
-7. **修改 namelist.input**： 
+7. **修改 namelist.input**：  
    修改在 REGRID/regridder/ 下的 namelist.input 檔案，設定要與先前一致
    * &record1 的部份為起始時間與結束時間
    * &record2 的部份為模式物理參數基本設定
@@ -89,5 +89,5 @@ REGRID概略圖：
    * &record4 的部份則是讓你選擇要不要輸出各種除錯訊息
    * &record5 為熱帶氣旋渦旋植入的部份
    在 namelist 中，沒有 SNOW 的資料也沒關係，程式會自動略過。
-8. **執行 regridder**：`./regridder`
+8. **執行 regridder**：`./regridder`  
    若執行成功將會產生檔案 "REGRID\_DOMAIN\#"

@@ -8,7 +8,7 @@ MM5 模式允許跳過客觀分析，直接用初始猜測場進行預報。
 
 1. **解壓縮**：`tar –zxvf LITTLE_R.tar.gz`
 2. **編譯**：`make`
-3. **修改 namelist.input**： 
+3. **修改 namelist.input**：  
    修改開始以及結束時間,還有 obs_filename 中回應的時間參數，以及其他參數。
-4. **執行程式**：`./little_r`： 
+4. **執行程式**：`./little_r`：  
    成功執行 LITTLE_R 後，會生成檔案 "LITTLE_R_DOMAIN1"

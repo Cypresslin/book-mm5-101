@@ -7,7 +7,7 @@ TERRAIN 的目的是將地表分類資料與地形高度資料結合，並按照
 若先前有建立過地形地貌資料，而在重新進行模擬時模式預報範圍的中心格點位置、格點數、網格間距不變的話就不必再次執行TERRAIN。
 
 1. **解壓縮 TERRAIN.tar.gz：** `tar –zxvf TERRAIN.tar.gz`
-2. **下載必要之地形、地表分類資料：** 
+2. **下載必要之地形、地表分類資料：**  
    地表分類等資料 - [ftp://ftp.ucar.edu/mesouser/MM5V3/TERRAIN\_DATA/](ftp://ftp.ucar.edu/mesouser/MM5V3/TERRAIN_DATA/)
    地形高度（Digital Elevation Model, DEM）資料 - [https://dds.cr.usgs.gov/srtm/](https://dds.cr.usgs.gov/srtm/)
    _\*由於這些資料檔案不小，若您為工作站管理者可以考慮讓大家採用 _`ln -sf`_連結的方式共用同一份資料以節省儲存空間_
@@ -75,7 +75,7 @@ TERRAIN 的目的是將地表分類資料與地形高度資料結合，並按照
    NUMNC  =    1,    1,    1  
    Domain 1最大，故一定是 1，Domain2 上一層為 Domain1，Domain3 也在 Domain1 中，故兩者皆為 1，以此類推。
 
-6. **製作地形資料**：`./terrain.deck` 
+6. **製作地形資料**：`./terrain.deck`  
    TERRAIN執行後會有三種輸出檔，分別為：
 
    * 一個預覽用的 TER.PLT 圖形檔（如果有安裝 NCAR 的圖形包）可用 `idt TER.PLT` 檢視各 Domain 的地形、地表分類等等。
