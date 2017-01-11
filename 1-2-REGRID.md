@@ -74,18 +74,20 @@ REGRID概略圖：
    確認 pregrid 程式產生了所需時間的資料檔。在 REGRID/pregrid/ 下，檢查每個時間上都產生了哪些變數場（ex: FILE:yyyy-mm-dd\_hh, SNOW\_FILE:yyyy-mm-dd\_hh, SST\_FILE:yyyy-mm-dd\_hh 等等）
 7. **修改 namelist.input**： 
    修改在 REGRID/regridder/ 下的 namelist.input 檔案，設定要與先前一致
-   &record1 的部份為起始時間與結束時間
-   &record2 的部份為模式物理參數基本設定
-   &record3 的部份為資料來源
-   root 的部份要放剛剛 pregrid 產出來的資料
-   terrain\_file\_name 則是放上地形檔
-   constant\_full\_name 則是放上固定不變的場，比如說海溫資料有缺，只有第一筆可用，那就可以把他放進去
+   * &record1 的部份為起始時間與結束時間
+   * &record2 的部份為模式物理參數基本設定
+   * &record3 的部份為資料來源
+   * root 的部份要放剛剛 pregrid 產出來的資料
+   * terrain\_file\_name 則是放上地形檔
+   * constant\_full\_name 則是放上固定不變的場，比如說海溫資料有缺，只有第一筆可用，那就可以把他放進去
    例：
+   ```
    root = '../pregrid/FILE' '../pregrid/SST\_FILE' '../pregrid/SNOW\_FILE'
    terrain\_file\_name = '../../TERRAIN/TERRAIN\_DOMAIN1'
    constants\_full\_name = ' '   /
-   &record4 的部份則是讓你選擇要不要輸出各種除錯訊息
-   &record5 為熱帶氣旋渦旋植入的部份
+   ```
+   * &record4 的部份則是讓你選擇要不要輸出各種除錯訊息
+   * &record5 為熱帶氣旋渦旋植入的部份
    在 namelist 中，沒有 SNOW 的資料也沒關係，程式會自動略過。
-8. 執行 regridder：`./regridder`
+8. **執行 regridder**：`./regridder`
    若執行成功將會產生檔案 "REGRID\_DOMAIN\#"
