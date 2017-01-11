@@ -69,8 +69,8 @@
    ```
 
    注意：MM5 Domain 不能重疊，只能一個包一個這樣  
-  
-   以上圖為例，NUMNC 應該就要設定為（不列出錯誤的 D04 與之後的 D05）；  
+    ![TERRAIN-DOMAIN](/images/terrain-domain.gif)
+   以上圖為例，NUMNC 應該就要設定為（不列出錯誤的 D04 與之後的 D05）： 
    NUMNC  =    1,    1,    1  
    Domain 1最大，故一定是 1，Domain2 上一層為 Domain1，Domain3 也在 Domain1 中，故兩者皆為 1，以此類推。
 
