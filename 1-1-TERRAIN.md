@@ -1,6 +1,6 @@
 # 前置資料處理 - TERRAIN（地形地貌）
 
-在這個章節中基本上會以開始一個新的模擬為基準，依序說明各階段的操作步驟。
+TERRAIN 的目的是將地表分類資料與地形高度資料結合，並按照所選定的地圖投影方式產生供模式後續使用的地形檔。
 
 ## TERRAIN 建立地形地貌資料
 
@@ -70,6 +70,7 @@
 
    注意：MM5 Domain 不能重疊，只能一個包一個這樣  
     ![TERRAIN-DOMAIN](/images/terrain-domain.gif)
+
    以上圖為例，NUMNC 應該就要設定為（不列出錯誤的 D04 與之後的 D05）： 
    NUMNC  =    1,    1,    1  
    Domain 1最大，故一定是 1，Domain2 上一層為 Domain1，Domain3 也在 Domain1 中，故兩者皆為 1，以此類推。
