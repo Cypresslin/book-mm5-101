@@ -53,11 +53,11 @@ TERRAIN 的目的是將地表分類資料與地形高度資料結合，並按照
    NESTJX =  271,   52,  181,  196,  211, 221,    ; X 方向上格點數
    DIS    =   2.,  30.,   9.,  3.0,  1.0, 1.0,    ; 網格間距(km)，以三倍變化
    NUMNC  =    1,    1,    2,    3,    4,   5,    ; 標明其上一層 Domain 是誰
-   NESTI  =    1,   10,   28,   35,   45,  50,     ; 該 Domain 最左下角的點位在上一層 i 方向的
+   NESTI  =    1,   10,   28,   35,   45,  50,    ; 該 Domain 最左下角的點位在上一層 i 方向的
    哪一點上，此設定表示 D02 位在 D01 中 i = 10 之處，D03 位在 D02 中 i = 28 之處...以此類推
-   NESTJ  =    1,   17,   25,   65,   55,  50,         ; 同上，但是為於j點之位置
-   RID    =  1.5,  1.5,  1.5,  3.1,  2.3, 2.3,         ; 客觀分析時的影響半徑，於 (IFANAL=T) 時才會生效
-   NTYPE  =    6,    3,    4,    6,    6,   6,         ; 輸入資料的解析度，請參照下表
+   NESTJ  =    1,   17,   25,   65,   55,  50,    ; 同上，但是為於j點之位置
+   RID    =  1.5,  1.5,  1.5,  3.1,  2.3, 2.3,    ; 客觀分析時的影響半徑，於 (IFANAL=T) 時才會生效
+   NTYPE  =    6,    3,    4,    6,    6,   6,    ; 輸入資料的解析度，請參照下表
    ;
    ;      1:  1 deg (~111 km) global terrain and landuse
    ;      2: 30 min ( ~56 km) global terrain and landuse
@@ -68,10 +68,10 @@ TERRAIN 的目的是將地表分類資料與地形高度資料結合，並按照
    ;
    ```
 
-   注意：MM5 Domain 不能重疊，只能一個包一個這樣  
+   注意：MM5 Domain 不能重疊，只能一個包一個：  
     ![TERRAIN-DOMAIN](/images/terrain-domain.gif) 
 
-   以上圖為例，NUMNC 應該就要設定為（不列出錯誤的 D04 與之後的 D05）： 
+   以上圖為例，NUMNC 應該就要設定為（此處不列出錯誤的 D04 與之後的 D05）：
    NUMNC  =    1,    1,    1  
    Domain 1最大，故一定是 1，Domain2 上一層為 Domain1，Domain3 也在 Domain1 中，故兩者皆為 1，以此類推。
 
@@ -103,5 +103,4 @@ TERRAIN 的目的是將地表分類資料與地形高度資料結合，並按照
 4. 到 terrain.deck 裡 ftpdata 設為 true，Where30sTer 設為 ftp（電腦會自動搜尋 Data、Data30s 資料夾，裡面有資料就不會抓）。
 5. 再次執行 terrain.deck 即可
 
-參考：[http://www.mmm.ucar.edu/mm5/faqTerrain.html](http://www.mmm.ucar.edu/mm5/faqTerrain.html)
-
+參考：[http://www2.mmm.ucar.edu/mm5/faqTerrain.html](http://www2.mmm.ucar.edu/mm5/faqTerrain.html)
