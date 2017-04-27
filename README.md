@@ -1,5 +1,7 @@
 # 序
 
+您可以在 GitBook 上閱讀本手冊：[https://cypresslin.gitbooks.io/mm5-101/content/](https://cypresslin.gitbooks.io/mm5-101/content/)
+
 這份文件大概是在我碩班畢業後的暑假整理出來的，當時跟勇伯實驗室的同學一起為學弟妹開了幾天的教學課程，所以除了本文之外還有當時大家一起整理出來的 WRF、GrADS 與 RIP4 教學文件，剛好網路上有這個平台可以讓這些文件繼續活下去，未來有機會的話會把它們也放上來。
 
 當初跑 MM5 試了不少有趣的組合，舉凡從原始碼編譯 32bit / 64bit、單機單核心 / 多核心以及單機 / 跨機多核心的版本，到實際去修改裡面的程式碼都碰過了，雖然還說不上熟到能夠倒背如流，不過應該是差不多能應付一般的狀況，跌跌撞撞後差不多也能把這些經驗撰寫成冊來分享一下。不過可惜用 MM5 的人似乎有越來越少的趨勢，哈哈！畢竟 NCAR 也已經[停止了 MM5 的開發](http://www2.mmm.ucar.edu/mm5/support/consult.html)。
@@ -8,7 +10,7 @@
 
 ### 系統環境
 
-本文的編寫是以當初在實驗室裡的主機（Red Hat Enterprise Linux, 2.6.9-89.ELlargesmp）為基準，Fortran 編譯器採用 Portland Group, Inc. (PGI) 的 pgf90 。
+本文的編寫是以當初在實驗室裡的主機（Red Hat Enterprise Linux, 2.6.9-89.ELlargesmp）為基準，Fortran 編譯器採用 Portland Group, Inc. (PGI) 的 pgf77 / pgf90 。
 
 ### 修改與建議
 
