@@ -10,7 +10,7 @@
 
 ### 系統環境
 
-本文的編寫是以當初在實驗室裡的主機（Red Hat Enterprise Linux, 2.6.9-89.ELlargesmp）為基準，Fortran 編譯器採用 Portland Group, Inc. (PGI) 的 pgf77 / pgf90 。
+本文的編寫是以當初在實驗室裡的主機（Red Hat Enterprise Linux, 2.6.9-89.ELlargesmp）為基準，Fortran 編譯器採用 Portland Group, Inc. (PGI) 的 pgf77 / pgf90，MM5 版本為最後的 3.7 版 。
 
 ### 修改與建議
 
