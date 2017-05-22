@@ -23,5 +23,5 @@ _使用場合 A 表示開始一個全新的模擬時可能會用上的工具。
 假設我今天要接續學長姐的模擬，但想看看採用不同數值參數化法會造成什麼樣的結果，那麼基本上只要用 MM5.tar.gz 主程式即可。倘若今天是要將前人的研究資料進一步用更細的網格來模擬，那就可能需要 TERRAIN、INTERPF、INTERPB、REGRID 或是 TERRAIN、NESTDOWN 了。
 
 這張來自 [MM5 Tutorial Class Note](http://www2.mmm.ucar.edu/mm5/documents/MM5_tut_Web_notes/tutorialTOC.htm) 的模擬流程圖可以讓你更了解自己到底需要用上什麼程式：  
-![](/images/flow.gif)
+![流程圖](/images/flow.gif)
 
