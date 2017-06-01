@@ -14,7 +14,7 @@ TERRAIN 的目的是將地表分類資料與地形高度資料結合，並按照
   * 這裡的地形資料檔是以區域劃分儲存為不同檔案，以我們最常用的東亞 30 度角秒來說，使用的是 e100n40.dem.zip 這個檔案，它指的是東經 100~140 度，北緯 -10~40 度這塊區域的地形檔，詳細的區域劃分可以看網站中的 [srtm30\_documentation.pdf](https://dds.cr.usgs.gov/srtm/version2_1/SRTM30/srtm30_documentation.pdf)，裡面有詳細的說明。或者是下載對應的 e100n40.gif.zip 來看繪製出來的 gif 圖（如下），相信這會讓你對所需區域更有概念。
    ![E100N40](/images/E100N40.GIF)
 3. **編譯 TERRAIN**：`make &> LOG`
-4. **生成 terrain.deck**：`make terrain.deck`
+4. **生成 terrain.deck 腳本檔**：`make terrain.deck`
 5. **照需求修改 terrain.deck**：  
    terrain.deck 是一個 c-shell 腳本，用來輸出設定檔給 Fortran 使用，是故檔案中開頭有 "C"、"\#" 或是 ";" 的部份都可以視為備註，以下節錄可能會改動到的部份。
 
