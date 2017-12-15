@@ -12,6 +12,7 @@
 * [後處理 - 垂直插值](4-1-INTERPB.md)
 * [後處理 - 轉為GrADS格式](5-1-MM5toGrADS.md)
 * [附錄 - 進階修改：修改 MM5 地形高度（地形敏感度測試）](A-1-ModTER.md)
+* [附錄 - 進階修改：修改 MM5 海溫資料](A-2-ModSST.md)
 
 * [Reference](Reference.md)
 
