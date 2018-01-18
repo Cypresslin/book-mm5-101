@@ -11,11 +11,9 @@
 修改要由 INTERPF/src/modual_all_io.F 這裡開始。(供模式模擬用的海溫資料似乎是會出現在 MMINPUT 以及 LOWBDY 這兩個檔案裡面)
 會需要修改裡面的 add_lbc 以及 outmodel 這兩個副程式
 
-* 若手邊沒有海溫資料...
-可以先在這檔案裡面加入一段程式碼讓它輸出 tseasfc 這個變數（應該是 Temperature - Sea Surface 的縮寫吧）再把這裡的值改成你想要的分佈情況。
+* 若手邊沒有海溫資料，可以先在這檔案裡面加入一段程式碼讓它輸出 tseasfc 這個變數（應該是 Temperature - Sea Surface 的縮寫吧）把這裡的值改成你想要的分佈情況後再塞回來。
 
-* 修改 add_lbc
-首先在 add_lbc 這支副程式底下（我猜這是 add lower bounday condition 的縮寫）找到下面這段：
+* 修改 add_lbc（我猜這是 add lower bounday condition 的縮寫）副程式，找到下面這段：
     ```
     WRITE ( unit_lowerbc )
     tseasfc_sh%num_dims , tseasfc_sh%start_dims ,
@@ -40,8 +38,7 @@
     WRITE ( unit_lowerbc ) tseasfc ! Specific things for surface air temperature small header.
     ```
 
-* 修改 outmodel
-於 WRITE ( immout ) ps0 的後面加入讀取海溫資料的程式碼，作法跟前面大致一樣，如下:
+* 修改 outmodel，於 WRITE ( immout ) ps0 的後面加入讀取海溫資料的程式碼，作法跟前面大致一樣，如下:
     ```
     ! (這裡除了宣告 i,j 還有 tseasfc 要宣告)
     integer :: i,j
@@ -62,7 +59,7 @@
     close(99)
     all_2d(16)%array(is:ie,js:je)=tseasfc ! 2D field number 16 is the SST field in MMINPUT
     ! 修改結束
-    ! 後面就是程式自己用 do loop 寫入資料了,不用管他
+    ! 後面就是程式自己用迴圈寫入資料了，不用管他
     DO loop = 1 , num_2d
         IF ( all_2d(loop)%small_header%ordering(1:2) .EQ. 'YX' ) THEN
         WRITE ( immout ) sh_flag
@@ -70,4 +67,3 @@
 
 ## 驗證修改結果
 在修改結束之後，強烈建議用 MM5toGrADS 等軟體將結果畫出來看看海溫的分佈是不是一如預期的那樣有成功的被修改。
-
