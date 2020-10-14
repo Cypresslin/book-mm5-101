@@ -174,7 +174,7 @@ C                                                                               
 C                                                                                CRTER.173
 ! = MM5 Terrain modification,
 ! = Insert me between "continue" (CRTER.171) and "return" (CRTER.174) 
-! = by Dennis and Cypresslin - http://cypresslin.web.fc2.com/
+! = by Dennis and Cypresslin - https://github.com/Cypresslin
 ! ===========================================================================
       iActivate = 0  ! 1 - yes; 0 - no
       factor = 0.0   ! multiplier, 0.0 : no terrain; 50.0 : 50% terrain ... etc

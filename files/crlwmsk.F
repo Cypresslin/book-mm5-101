@@ -178,7 +178,7 @@ C  ... OVER THE LAND:                                                           
 ! ===========================================================================
 ! = MM5 Land-Water mask modification,
 ! = Insert me between "ENDIF" (CRLWMSK.175) and "ENDDO" (CRLWMSK.176) 
-! = by Cypresslin - http://cypresslin.web.fc2.com/
+! = by Cypresslin - https://github.com/Cypresslin
 ! ===========================================================================
       iActivate = 1
       if ( iActivate .eq. 1 ) then
