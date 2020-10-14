@@ -15,5 +15,5 @@
 * [附錄 - 進階修改：修改 MM5 海溫資料](A-2-ModSST.md)
 * [附錄 - 進階修改：非標準資料之輸出](A-3-NonSTDOP.md)
 
-* [Reference](Reference.md)
+* [Reference / 致謝](Reference.md)
 
