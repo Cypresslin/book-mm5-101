@@ -1,5 +1,5 @@
 {
-    "plugins": ["disqus", "mathjax"],
+    "plugins": ["disqus"],
     "pluginsConfig": {
         "disqus": {
             "shortName": "nothing-here"
