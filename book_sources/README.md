@@ -1,6 +1,6 @@
 # 序
 
-您可以在 GitBook 上閱讀本手冊：[https://cypresslin.gitbooks.io/mm5-101/content/](https://cypresslin.gitbooks.io/mm5-101/content/)
+由於 GitBook 已轉換至 GitBookV2，舊有的 GitBook legacy 僅提供原有資料的快照，故這裡使用 [onejar99 網友提供的教學](https://www.onejar99.com/gitbook-building-and-publishing-free-unlimitedly/)將其部屬至 GitHub Pages，您可以在那閱讀本手冊：[https://cypresslin.github.io/book-mm5-101/](https://cypresslin.github.io/book-mm5-101/)
 
 這份文件大概是在我碩班畢業後的暑假整理出來的，當時跟勇伯實驗室的同學一起為學弟妹開了幾天的教學課程，所以除了本文之外還有當時大家一起整理出來的 WRF、GrADS 與 RIP4 教學文件，剛好網路上有這個平台可以讓這些文件繼續活下去，未來有機會的話會把它們也放上來。
 
