@@ -1,0 +1,543 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>附錄 - MM5 副程式對照表 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Reference.html" />
+    
+    
+    <link rel="prev" href="A-4-VarList.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0-Preparation.html">
+            
+                <a href="0-Preparation.html">
+            
+                    
+                    使用 MM5 的事前準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1-1-TERRAIN.html">
+            
+                <a href="1-1-TERRAIN.html">
+            
+                    
+                    前置資料處理：地形地貌
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="1-2-REGRID.html">
+            
+                <a href="1-2-REGRID.html">
+            
+                    
+                    前置資料處理 - 初始猜測場
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="1-3-LITTLE_R.html">
+            
+                <a href="1-3-LITTLE_R.html">
+            
+                    
+                    前置資料處理 - 客觀分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="1-4-INTERPF.html">
+            
+                <a href="1-4-INTERPF.html">
+            
+                    
+                    前置資料處理 - 垂直插值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="2-1-MM5.html">
+            
+                <a href="2-1-MM5.html">
+            
+                    
+                    進行模擬
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="3-1-MPPMM5.html">
+            
+                <a href="3-1-MPPMM5.html">
+            
+                    
+                    平行化運算 - MPPMM5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="3-2-OPENMP.html">
+            
+                <a href="3-2-OPENMP.html">
+            
+                    
+                    平行化運算 - OpenMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="4-1-INTERPB.html">
+            
+                <a href="4-1-INTERPB.html">
+            
+                    
+                    後處理 - 垂直插值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="5-1-MM5toGrADS.html">
+            
+                <a href="5-1-MM5toGrADS.html">
+            
+                    
+                    後處理 - 轉為GrADS格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="A-1-ModTER.html">
+            
+                <a href="A-1-ModTER.html">
+            
+                    
+                    附錄 - 進階修改：修改 MM5 地形高度（地形敏感度測試）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="A-2-ModSST.html">
+            
+                <a href="A-2-ModSST.html">
+            
+                    
+                    附錄 - 進階修改：修改 MM5 海溫資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="A-3-NonSTDOP.html">
+            
+                <a href="A-3-NonSTDOP.html">
+            
+                    
+                    附錄 - 進階修改：非標準資料之輸出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="A-4-VarList.html">
+            
+                <a href="A-4-VarList.html">
+            
+                    
+                    附錄 - MM5 變數表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16" data-path="A-5-SubList.html">
+            
+                <a href="A-5-SubList.html">
+            
+                    
+                    附錄 - MM5 副程式對照表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Reference.html">
+            
+                <a href="Reference.html">
+            
+                    
+                    Reference / 致謝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >附錄 - MM5 副程式對照表</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9644;&#x9304;---mm5-&#x526F;&#x7A0B;&#x5F0F;&#x5C0D;&#x7167;&#x8868;">&#x9644;&#x9304; - MM5 &#x526F;&#x7A0B;&#x5F0F;&#x5C0D;&#x7167;&#x8868;</h1>
+<p>&#x9019;&#x500B;&#x9801;&#x9762;&#x8A18;&#x8F09;&#x7684;&#x5167;&#x5BB9;&#x4E3B;&#x8981;&#x662F;&#x6A19;&#x660E; MM5 &#x4E2D;&#x5404;&#x500B;&#x526F;&#x7A0B;&#x5F0F;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x7531;&#x65BC;&#x7DB2;&#x8DEF;&#x4E0A;&#x4F3C;&#x4E4E;&#x6C92;&#x770B;&#x5230;&#x985E;&#x4F3C;&#x7684;&#x6771;&#x897F;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x628A;&#x5148;&#x524D;&#x6574;&#x7406;&#x7684;&#x7B46;&#x8A18;&#x4E5F;&#x653E;&#x4E0A;&#x4F86;&#x3002;&#x540C;&#x6A23;&#x7684;&#xFF0C;&#x9019;&#x500B;&#x8868;&#x683C;<strong>&#x4E0D;&#x4FDD;&#x8B49;&#x5176;&#x6B63;&#x78BA;&#x6027;</strong>&#x3002;</p>
+<p>&#x5176;&#x5BE6;&#x9019;&#x4E9B;&#x526F;&#x7A0B;&#x5F0F;&#x7684;&#x547D;&#x540D;&#x90FD;&#x5F88;&#x76F4;&#x89C0;&#xFF0C;&#x800C;&#x4E14;&#x5927;&#x591A;&#x5728;&#x6700;&#x524D;&#x9762;&#x90FD;&#x6703;&#x8A3B;&#x660E;&#x5176;&#x529F;&#x7528;&#xFF0C;&#x53EA;&#x8981;&#x7A0D;&#x5FAE;&#x770B;&#x4E00;&#x4E0B;&#x5927;&#x6982;&#x5C31;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x5B83;&#x5728;&#x505A;&#x4EC0;&#x9EBC;&#x4E86;
+&#xFF08;&#x6240;&#x6709;&#x8207;&#x7269;&#x7406;&#x53C3;&#x6578;&#x5316;&#x6CD5;&#x6709;&#x95DC;&#x7684;&#x526F;&#x7A0B;&#x5F0F;&#x90FD;&#x5728;MM5/physics&#x5E95;&#x4E0B;&#xFF09;</p>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x7A31;</th>
+<th>&#x4F4D;&#x7F6E;</th>
+<th>&#x7C21;&#x8FF0;</th>
+<th>&#x5F9E;&#x5C6C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COUPLE</td>
+<td>MM5/domain/util/couple.F</td>
+<td>Couple &#x5169;&#x8B8A;&#x6578;&#x7528;</td>
+<td>rdinit.F</td>
+</tr>
+<tr>
+<td>DCPL3D</td>
+<td>MM5/domain/util/dcpl3dwnd.F</td>
+<td>Decouple &#x4E09;&#x7DAD;&#x8B8A;&#x6578;&#x7528;</td>
+<td>solve.F</td>
+</tr>
+<tr>
+<td>DCPL3DWND</td>
+<td>MM5/domain/util/dcpl3d.F</td>
+<td>Decouple &#x4E09;&#x7DAD;&#x98A8;&#x5834;&#x7528;</td>
+<td>solve.F</td>
+</tr>
+<tr>
+<td>DOTS</td>
+<td>MM5/domain/util/dots.F</td>
+<td>&#x5C07; C.-Point &#x7684;&#x503C;&#x5167;&#x63D2;&#x81F3; D.-Point &#x4E0A;</td>
+<td>&#x4E0D;&#x5B9A;</td>
+</tr>
+<tr>
+<td>EQUATE</td>
+<td>MM5/domain/util/equate.F</td>
+<td>&#x8B93; A &#x9663;&#x5217;&#x7B49;&#x65BC; B &#x9663;&#x5217;</td>
+<td>&#x4E0D;&#x5B9A;</td>
+</tr>
+<tr>
+<td>EQUATO</td>
+<td>MM5/domain/util/equate.F</td>
+<td>&#x540C;&#x4E0A;</td>
+<td>outtap.F</td>
+</tr>
+<tr>
+<td>PARAM</td>
+<td>MM5/domain/initial/param.F</td>
+<td>&#x5E38;&#x6578;&#x4E4B;&#x5B9A;&#x7FA9;</td>
+<td>mm5.F</td>
+</tr>
+<tr>
+<td>PARAMR</td>
+<td>MM5/domain/initial/paramr.F</td>
+<td>&#x96F2;&#x5FAE;&#x7269;&#x7406;&#x53C3;&#x6578;&#x5316;&#x6CD5;&#x5E38;&#x6578;&#x4E4B;&#x5B9A;&#x7FA9;</td>
+<td>param.F</td>
+</tr>
+<tr>
+<td>OUTTAP</td>
+<td>MM5/domain/io/outtap.F</td>
+<td>&#x8F38;&#x51FA;&#x6A21;&#x64EC;&#x8CC7;&#x6599;</td>
+<td>&#x4E0D;&#x5B9A;</td>
+</tr>
+<tr>
+<td>OUTPRT</td>
+<td>MM5/domain/io/outprt.F</td>
+<td>&#x5370;&#x51FA;&#x90E8;&#x4EFD;&#x6A21;&#x64EC;&#x8CC7;&#x6599;&#x4F9B;&#x5FEB;&#x901F;&#x6AA2;&#x9A57;&#x7528;</td>
+<td>&#x4E0D;&#x5B9A;</td>
+</tr>
+<tr>
+<td>HADV</td>
+<td>MM5/physics/advection/simple/hadv.F</td>
+<td>&#x8A08;&#x7B97;&#x6C34;&#x5E73;&#x901A;&#x91CF;&#x8F3B;&#x6563;</td>
+<td>solve.F</td>
+</tr>
+<tr>
+<td>VADV</td>
+<td>MM5/physics/advection/simple/vadv.F</td>
+<td>&#x8A08;&#x7B97;&#x5782;&#x76F4;&#x901A;&#x91CF;&#x8F3B;&#x6563;</td>
+<td>solve.F</td>
+</tr>
+<tr>
+<td>SOLVE</td>
+<td>MM5/dynamics/nonhydro/solve.F</td>
+<td>MM5 &#x7684;&#x4E3B;&#x8981;&#x8A08;&#x7B97;&#x6838;&#x5FC3;</td>
+<td>mm5.F</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="A-4-VarList.html" class="navigation navigation-prev " aria-label="Previous page: 附錄 - MM5 變數表">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Reference.html" class="navigation navigation-next " aria-label="Next page: Reference / 致謝">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"附錄 - MM5 副程式對照表","level":"1.16","depth":1,"next":{"title":"Reference / 致謝","level":"1.17","depth":1,"path":"Reference.md","ref":"Reference.md","articles":[]},"previous":{"title":"附錄 - MM5 變數表","level":"1.15","depth":1,"path":"A-4-VarList.md","ref":"A-4-VarList.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"nothing-here"},"sharing":{"facebook":true,"twitter":true,"google":true,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","instapaper","instapaper"]},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"A-5-SubList.md","mtime":"2021-03-28T14:57:54.989Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-28T14:58:25.228Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

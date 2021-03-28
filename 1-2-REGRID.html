@@ -1,0 +1,533 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>前置資料處理 - 初始猜測場 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1-3-LITTLE_R.html" />
+    
+    
+    <link rel="prev" href="1-1-TERRAIN.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0-Preparation.html">
+            
+                <a href="0-Preparation.html">
+            
+                    
+                    使用 MM5 的事前準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1-1-TERRAIN.html">
+            
+                <a href="1-1-TERRAIN.html">
+            
+                    
+                    前置資料處理：地形地貌
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="1-2-REGRID.html">
+            
+                <a href="1-2-REGRID.html">
+            
+                    
+                    前置資料處理 - 初始猜測場
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="1-3-LITTLE_R.html">
+            
+                <a href="1-3-LITTLE_R.html">
+            
+                    
+                    前置資料處理 - 客觀分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="1-4-INTERPF.html">
+            
+                <a href="1-4-INTERPF.html">
+            
+                    
+                    前置資料處理 - 垂直插值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="2-1-MM5.html">
+            
+                <a href="2-1-MM5.html">
+            
+                    
+                    進行模擬
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="3-1-MPPMM5.html">
+            
+                <a href="3-1-MPPMM5.html">
+            
+                    
+                    平行化運算 - MPPMM5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="3-2-OPENMP.html">
+            
+                <a href="3-2-OPENMP.html">
+            
+                    
+                    平行化運算 - OpenMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="4-1-INTERPB.html">
+            
+                <a href="4-1-INTERPB.html">
+            
+                    
+                    後處理 - 垂直插值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="5-1-MM5toGrADS.html">
+            
+                <a href="5-1-MM5toGrADS.html">
+            
+                    
+                    後處理 - 轉為GrADS格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="A-1-ModTER.html">
+            
+                <a href="A-1-ModTER.html">
+            
+                    
+                    附錄 - 進階修改：修改 MM5 地形高度（地形敏感度測試）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="A-2-ModSST.html">
+            
+                <a href="A-2-ModSST.html">
+            
+                    
+                    附錄 - 進階修改：修改 MM5 海溫資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="A-3-NonSTDOP.html">
+            
+                <a href="A-3-NonSTDOP.html">
+            
+                    
+                    附錄 - 進階修改：非標準資料之輸出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="A-4-VarList.html">
+            
+                <a href="A-4-VarList.html">
+            
+                    
+                    附錄 - MM5 變數表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="A-5-SubList.html">
+            
+                <a href="A-5-SubList.html">
+            
+                    
+                    附錄 - MM5 副程式對照表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Reference.html">
+            
+                <a href="Reference.html">
+            
+                    
+                    Reference / 致謝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >前置資料處理 - 初始猜測場</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x524D;&#x7F6E;&#x8CC7;&#x6599;&#x8655;&#x7406;---regrid&#xFF08;&#x521D;&#x59CB;&#x731C;&#x6E2C;&#x5834;-&#xFF09;">&#x524D;&#x7F6E;&#x8CC7;&#x6599;&#x8655;&#x7406; - REGRID&#xFF08;&#x521D;&#x59CB;&#x731C;&#x6E2C;&#x5834; &#xFF09;</h1>
+<p>REGRID &#x4E4B;&#x76EE;&#x7684;&#x5728;&#x8B80;&#x53D6;&#x6C23;&#x58D3;&#x5C64;&#x4E0A;&#x7684;&#x6C23;&#x8C61;&#x5206;&#x6790;&#x8CC7;&#x6599;&#xFF0C;&#x4E26;&#x628A;&#x5206;&#x6790;&#x8CC7;&#x6599;&#x7531;&#x539F;&#x6709;&#x7684;&#x683C;&#x9EDE;&#x548C;&#x5730;&#x5716;&#x6295;&#x5F71;&#x63D2;&#x503C;&#x5230;&#x7D93;&#x7531; TERRAIN &#x9019;&#x652F;&#x524D;&#x8655;&#x7406;&#x7A0B;&#x5F0F;&#x6240;&#x5B9A;&#x7FA9;&#x7684;&#x7DB2;&#x683C;&#x9EDE;&#x548C;&#x5730;&#x5716;&#x6295;&#x5F71;&#x4E0A;&#xFF0C;&#x63DB;&#x53E5;&#x8A71;&#x8AAA;&#x5C31;&#x662F;&#x5C07; NCEP/TOGA &#x89C0;&#x6E2C;&#x8CC7;&#x6599;&#x6216;&#x662F;&#x9810;&#x5831;&#x5834;&#x8CC7;&#x6599;&#xFF0C;&#x5167;&#x63D2;&#x5230; MM5 &#x6A21;&#x5F0F;&#x7DB2;&#x683C;&#x9EDE;&#x4E0A;&#xFF0C;&#x5F62;&#x6210;&#x6A21;&#x5F0F;&#x521D;&#x59CB;&#x731C;&#x6E2C;&#x5834;&#x3002;</p>
+<p>REGRID &#x70BA; MM5 &#x7CFB;&#x7D71;&#x6D41;&#x7A0B;&#x5716;&#x4E2D;&#x7684;&#x7B2C;&#x4E8C;&#x6B65;&#xFF0C;&#x4ED6;&#x9700;&#x8981;&#x4F86;&#x81EA; TERRAIN &#x7A0B;&#x5F0F;&#x7684;&#x8F38;&#x51FA;&#x4F5C;&#x70BA;&#x5176;&#x8F38;&#x5165;&#xFF0C;&#x4E26;&#x70BA; RAWINS&#xFF0C;LITTLE_R&#xFF0C;&#x6216;&#x662F; INTERPF &#x7522;&#x751F;&#x8F38;&#x5165;&#x6587;&#x4EF6;&#x3002;</p>
+<p>REGRID&#x6982;&#x7565;&#x5716;&#xFF1A;
+<img src="images/regrid-workflow.gif" alt="REGRID Workflow"></p>
+<h2 id="regrid-&#x8655;&#x7406;&#x521D;&#x59CB;&#x8CC7;&#x6599;">REGRID &#x8655;&#x7406;&#x521D;&#x59CB;&#x8CC7;&#x6599;</h2>
+<ol>
+<li><strong>&#x89E3;&#x58D3;&#x7E2E;REGRID.tar.gz</strong>&#xFF1A;<code>tar &#x2013;zxvf REGRID.tar.gz</code></li>
+<li><strong>&#x9032;&#x884C;&#x7DE8;&#x8B6F;&#xFF08;&#x5FC5;&#x8981;&#x6642;&#x8ACB;&#x4FEE;&#x6539;Makefile&#xFF09;</strong>&#xFF1A;<code>make</code></li>
+<li><p><strong>&#x4FEE;&#x6539; REGRID/pregrid/pregrid.csh</strong>&#xFF1A;<br>&#x8ACB;&#x5728;&#x9019;&#x500B; c-shell &#x8173;&#x672C;&#x4E2D;&#x8A2D;&#x5B9A;&#x597D;&#x4F60;&#x8CC7;&#x6599;&#x683C;&#x5F0F;&#x3001;&#x6240;&#x5728;&#x4F4D;&#x7F6E;&#x4EE5;&#x53CA;&#x6642;&#x9593;&#xFF0C;&#x4E00;&#x822C;&#x4F86;&#x8AAA;&#x662F;&#x4F7F;&#x7528; GRIB &#x683C;&#x5F0F;&#x8CC7;&#x6599;&#x3002;&#x88E1;&#x9762;&#x53EF;&#x80FD;&#x6703;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x6771;&#x897F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>set DataDir = &#x4F60;&#x8CC7;&#x6599;&#x6240;&#x5728;&#x7684;&#x4F4D;&#x7F6E;
+# &#x79FB;&#x9664;&#x4E0B;&#x9762;&#x7684; &quot;#&quot; &#x4F86;&#x9078;&#x64C7;&#x8981;&#x8B80;&#x5165;&#x7684;&#x8CC7;&#x6599;&#x683C;&#x5F0F;&#xFF0C;&#x9078;&#x7528;&#x5176;&#x4ED6;&#x8CC7;&#x6599;&#x6642;&#x8A18;&#x5F97;&#x8981;&#x628A;&#x73FE;&#x5728;&#x7684; GRIB &#x8A3B;&#x89E3;&#x6389;
+# set SRC3D = ON84  # Old ON84-formatted NCEP GDAS analyses
+# set SRC3D = NCEP  # Newer GRIB-formatted NCEP GDAS analyses
+set SRC3D = GRIB    # Many GRIB-format datasets,
+# &#x8981;&#x8B80;&#x5165;&#x7684;&#x8CC7;&#x6599;&#x540D;&#x7A31;&#x683C;&#x5F0F;
+set InFiles = ( ${DataDir}/EC* )
+# set InFiles = ( ${DataDir}/fnl* )
+# &#x6A19;&#x660E;&#x8981;&#x4F7F;&#x7528;&#x54EA;&#x7A2E;SST&#x8CC7;&#x6599;
+# set SRCSST = ON84
+# set SRCSST = NCEP
+# set SRCSST = NAVY
+# &#x9019;&#x88E1;&#x7684; $SRC3D &#x8868;&#x793A;&#x5B83;&#x6703;&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#x8A2D;&#x5B9A;&#x7684; SRC3D &#x8B8A;&#x6578;&#xFF0C;&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#x5C31;&#x662F; GRIB
+set SRCSST = $SRC3D
+&#x6A19;&#x660E;&#x8981;&#x4F7F;&#x7528;&#x54EA;&#x7A2E;&#x96EA;&#x7684;&#x8CC7;&#x6599;
+set SRCSNOW = $SRC3D
+# set SRCSNOW = ON84
+# set SRCSNOW = GRIB
+# &#x6A21;&#x64EC;&#x8D77;&#x59CB;&#x6642;&#x9593;
+START_YEAR     = 2001    # Year (Four digits)
+START_MONTH= 09        # Month ( 01 - 12 )
+START_DAY     = 15        # Day ( 01 - 31 )
+START_HOUR     = 12        # Hour ( 00 - 23 )
+# &#x6A21;&#x64EC;&#x7D50;&#x675F;&#x6642;&#x9593;
+END_YEAR      = 2001    # Year (Four digits)
+END_MONTH    = 09        # Month ( 01 - 12 )
+END_DAY      = 19        # Day ( 01 - 31 )
+END_HOUR      = 00        # Hour ( 00 - 23 )
+#
+# &#x6C7A;&#x5B9A;&#x8CC7;&#x6599;&#x8655;&#x7406;&#x6642;&#x9593;&#x9593;&#x9694;&#xFF0C;&#x4E00;&#x822C;&#x4F86;&#x8AAA;&#x5206;&#x6790;&#x8CC7;&#x6599;&#x516D;&#x5C0F;&#x6642;&#x4E00;&#x7B46;&#xFF0C;&#x6240;&#x4EE5;&#x7528; 21600
+# Define the time interval to process.
+#
+INTERVAL =  21600 # Time interval (seconds) to process.
+/
+End_Of_Namelist
+
+#
+#  Tell the pregrid programs which Vtables to use.  Do this only
+#  if you have selected GRIB-formatted input using SRC___ = GRIB above.
+#  The directories referenced here are relative to REGRID/pregrid/.
+#
+#  The Vtable files specified in VT3D will be applied to the files
+#  specified in the InFiles variable.  Similarly, the Vtable files
+#  specified in VTSST, VTSNOW, and VTSOIL will be applied to the files
+#  listed above in InSST, InSNOW, and InSoil, respectively.
+#
+# &#x82E5;&#x9078;&#x7528;GRIB&#xFF0C;&#x5247;&#x9808;&#x66F4;&#x6539;&#x4E0B;&#x65B9;&#x7684; VT3D, VTSST, VTSNOW, VTSOIL &#x7684;&#x8B80;&#x53D6;&#x683C;&#x5F0F;&#x540D;&#x7A31;&#xFF0C;&#x4F8B;&#xFF1A;
+set VT3D = ( grib.misc/Vtable.ERA3D )
+set VTSST = ( grib.misc/Vtable.ERASST )
+set VTSNOW = ( grib.misc/Vtable.ERASNOW )
+set VTSOIL = ( grib.misc/Vtable.AVNSOIL )
+# Vtable &#x70BA;&#x8B8A;&#x6578;&#x5C0D;&#x7167;&#x8868;&#xFF0C;&#x53EF;&#x81F3; ECMWF &#x67E5;&#x4F60;&#x9700;&#x8981;&#x7684;&#x8B8A;&#x6578;&#x7684;code&#xFF0C;&#x518D;&#x770B;&#x4F60;&#x9700;&#x8981;&#x54EA;&#x4E00;&#x500B;&#x8868;&#xFF0C;&#x5C0D;&#x7167;&#x8868;&#x53EF;&#x53C3;&#x8003;[http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ecmwf-grib-mapping](http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ecmwf-grib-mapping)
+</code></pre></li>
+<li><strong>&#x5C07; pregrid.csh &#x52A0;&#x4E0A;&#x53EF;&#x4EE5;&#x57F7;&#x884C;&#x7684;&#x6B0A;&#x9650;</strong>&#xFF1A;<code>chmod u+x pregrid.csh</code></li>
+<li><strong>&#x57F7;&#x884C; pregrid.csh</strong>&#xFF1A;<code>./pregird.csh</code></li>
+<li><strong>&#x6AA2;&#x67E5;&#x8F38;&#x51FA;</strong>&#xFF1A;<br>&#x78BA;&#x8A8D; pregrid &#x7A0B;&#x5F0F;&#x7522;&#x751F;&#x4E86;&#x6240;&#x9700;&#x6642;&#x9593;&#x7684;&#x8CC7;&#x6599;&#x6A94;&#x3002;&#x5728; REGRID/pregrid/ &#x4E0B;&#xFF0C;&#x6AA2;&#x67E5;&#x6BCF;&#x500B;&#x6642;&#x9593;&#x4E0A;&#x90FD;&#x7522;&#x751F;&#x4E86;&#x54EA;&#x4E9B;&#x8B8A;&#x6578;&#x5834;&#xFF08;ex: FILE:yyyy-mm-dd_hh, SNOW_FILE:yyyy-mm-dd_hh, SST_FILE:yyyy-mm-dd_hh &#x7B49;&#x7B49;&#xFF09;</li>
+<li><strong>&#x4FEE;&#x6539; namelist.input</strong>&#xFF1A;<br>&#x4FEE;&#x6539;&#x5728; REGRID/regridder/ &#x4E0B;&#x7684; namelist.input &#x6A94;&#x6848;&#xFF0C;&#x8A2D;&#x5B9A;&#x8981;&#x8207;&#x5148;&#x524D;&#x4E00;&#x81F4;<ul>
+<li>&amp;record1 &#x7684;&#x90E8;&#x4EFD;&#x70BA;&#x8D77;&#x59CB;&#x6642;&#x9593;&#x8207;&#x7D50;&#x675F;&#x6642;&#x9593;</li>
+<li>&amp;record2 &#x7684;&#x90E8;&#x4EFD;&#x70BA;&#x6A21;&#x5F0F;&#x7269;&#x7406;&#x53C3;&#x6578;&#x57FA;&#x672C;&#x8A2D;&#x5B9A;</li>
+<li>&amp;record3 &#x7684;&#x90E8;&#x4EFD;&#x70BA;&#x8CC7;&#x6599;&#x4F86;&#x6E90;</li>
+<li>root &#x7684;&#x90E8;&#x4EFD;&#x8981;&#x653E;&#x525B;&#x525B; pregrid &#x7522;&#x51FA;&#x4F86;&#x7684;&#x8CC7;&#x6599;</li>
+<li>terrain_file_name &#x5247;&#x662F;&#x653E;&#x4E0A;&#x5730;&#x5F62;&#x6A94;</li>
+<li>constant_full_name &#x5247;&#x662F;&#x653E;&#x4E0A;&#x56FA;&#x5B9A;&#x4E0D;&#x8B8A;&#x7684;&#x5834;&#xFF0C;&#x6BD4;&#x5982;&#x8AAA;&#x6D77;&#x6EAB;&#x8CC7;&#x6599;&#x6709;&#x7F3A;&#xFF0C;&#x53EA;&#x6709;&#x7B2C;&#x4E00;&#x7B46;&#x53EF;&#x7528;&#xFF0C;&#x90A3;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x4ED6;&#x653E;&#x9032;&#x53BB;
+&#x4F8B;&#xFF1A;<pre><code>root = &apos;../pregrid/FILE&apos; &apos;../pregrid/SST\_FILE&apos; &apos;../pregrid/SNOW\_FILE&apos;
+terrain\_file\_name = &apos;../../TERRAIN/TERRAIN\_DOMAIN1&apos;
+constants\_full\_name = &apos; &apos;   /
+</code></pre></li>
+<li>&amp;record4 &#x7684;&#x90E8;&#x4EFD;&#x5247;&#x662F;&#x8B93;&#x4F60;&#x9078;&#x64C7;&#x8981;&#x4E0D;&#x8981;&#x8F38;&#x51FA;&#x5404;&#x7A2E;&#x9664;&#x932F;&#x8A0A;&#x606F;</li>
+<li>&amp;record5 &#x70BA;&#x71B1;&#x5E36;&#x6C23;&#x65CB;&#x6E26;&#x65CB;&#x690D;&#x5165;&#x7684;&#x90E8;&#x4EFD;
+&#x5728; namelist &#x4E2D;&#xFF0C;&#x6C92;&#x6709; SNOW &#x7684;&#x8CC7;&#x6599;&#x4E5F;&#x6C92;&#x95DC;&#x4FC2;&#xFF0C;&#x7A0B;&#x5F0F;&#x6703;&#x81EA;&#x52D5;&#x7565;&#x904E;&#x3002;</li>
+</ul>
+</li>
+<li><strong>&#x57F7;&#x884C; regridder</strong>&#xFF1A;<code>./regridder</code><br>&#x82E5;&#x57F7;&#x884C;&#x6210;&#x529F;&#x5C07;&#x6703;&#x7522;&#x751F;&#x6A94;&#x6848; &quot;REGRID_DOMAIN#&quot;</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1-1-TERRAIN.html" class="navigation navigation-prev " aria-label="Previous page: 前置資料處理：地形地貌">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1-3-LITTLE_R.html" class="navigation navigation-next " aria-label="Next page: 前置資料處理 - 客觀分析">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"前置資料處理 - 初始猜測場","level":"1.4","depth":1,"next":{"title":"前置資料處理 - 客觀分析","level":"1.5","depth":1,"path":"1-3-LITTLE_R.md","ref":"1-3-LITTLE_R.md","articles":[]},"previous":{"title":"前置資料處理：地形地貌","level":"1.3","depth":1,"path":"1-1-TERRAIN.md","ref":"1-1-TERRAIN.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"nothing-here"},"sharing":{"facebook":true,"twitter":true,"google":true,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","instapaper","instapaper"]},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1-2-REGRID.md","mtime":"2021-03-28T14:57:54.989Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-28T14:58:25.228Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

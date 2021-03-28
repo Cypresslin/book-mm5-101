@@ -1,0 +1,534 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>附錄 - 進階修改：修改 MM5 海溫資料 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="A-3-NonSTDOP.html" />
+    
+    
+    <link rel="prev" href="A-1-ModTER.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0-Preparation.html">
+            
+                <a href="0-Preparation.html">
+            
+                    
+                    使用 MM5 的事前準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1-1-TERRAIN.html">
+            
+                <a href="1-1-TERRAIN.html">
+            
+                    
+                    前置資料處理：地形地貌
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="1-2-REGRID.html">
+            
+                <a href="1-2-REGRID.html">
+            
+                    
+                    前置資料處理 - 初始猜測場
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="1-3-LITTLE_R.html">
+            
+                <a href="1-3-LITTLE_R.html">
+            
+                    
+                    前置資料處理 - 客觀分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="1-4-INTERPF.html">
+            
+                <a href="1-4-INTERPF.html">
+            
+                    
+                    前置資料處理 - 垂直插值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="2-1-MM5.html">
+            
+                <a href="2-1-MM5.html">
+            
+                    
+                    進行模擬
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="3-1-MPPMM5.html">
+            
+                <a href="3-1-MPPMM5.html">
+            
+                    
+                    平行化運算 - MPPMM5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="3-2-OPENMP.html">
+            
+                <a href="3-2-OPENMP.html">
+            
+                    
+                    平行化運算 - OpenMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="4-1-INTERPB.html">
+            
+                <a href="4-1-INTERPB.html">
+            
+                    
+                    後處理 - 垂直插值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="5-1-MM5toGrADS.html">
+            
+                <a href="5-1-MM5toGrADS.html">
+            
+                    
+                    後處理 - 轉為GrADS格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="A-1-ModTER.html">
+            
+                <a href="A-1-ModTER.html">
+            
+                    
+                    附錄 - 進階修改：修改 MM5 地形高度（地形敏感度測試）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="A-2-ModSST.html">
+            
+                <a href="A-2-ModSST.html">
+            
+                    
+                    附錄 - 進階修改：修改 MM5 海溫資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="A-3-NonSTDOP.html">
+            
+                <a href="A-3-NonSTDOP.html">
+            
+                    
+                    附錄 - 進階修改：非標準資料之輸出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="A-4-VarList.html">
+            
+                <a href="A-4-VarList.html">
+            
+                    
+                    附錄 - MM5 變數表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="A-5-SubList.html">
+            
+                <a href="A-5-SubList.html">
+            
+                    
+                    附錄 - MM5 副程式對照表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Reference.html">
+            
+                <a href="Reference.html">
+            
+                    
+                    Reference / 致謝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >附錄 - 進階修改：修改 MM5 海溫資料</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9644;&#x9304;---&#x9032;&#x968E;&#x4FEE;&#x6539;&#xFF1A;&#x4FEE;&#x6539;-mm5-&#x6D77;&#x6EAB;&#x8CC7;&#x6599;">&#x9644;&#x9304; - &#x9032;&#x968E;&#x4FEE;&#x6539;&#xFF1A;&#x4FEE;&#x6539; MM5 &#x6D77;&#x6EAB;&#x8CC7;&#x6599;</h1>
+<p><strong>&#x4EE5;&#x4E0B;&#x7684;&#x4FEE;&#x6539;&#x7686;&#x9700;&#x8981;&#x52D5;&#x5230; MM5 &#x5167;&#x7684; Fortran &#x7A0B;&#x5F0F;&#x78BC;&#xFF0C;&#x8ACB;&#x4E09;&#x601D;&#x800C;&#x5F8C;&#x884C;&#xFF0C;&#x6B64;&#x5916;&#x4FEE;&#x6539;&#x5F8C;&#x8A18;&#x5F97;&#x8981;&#x91CD;&#x65B0;&#x7DE8;&#x8B6F;&#x4F86;&#x8B93;&#x8B8A;&#x66F4;&#x751F;&#x6548;&#x3002;</strong></p>
+<p>&#x5728;&#x9032;&#x884C;&#x5730;&#x5F62;&#x654F;&#x611F;&#x5EA6;&#x6578;&#x503C;&#x5BE6;&#x9A57;&#x6642;&#xFF0C;&#x9664;&#x4E86;&#x5C07;&#x5730;&#x5F62;&#x79FB;&#x9664;&#x7684;&#x7121;&#x5730;&#x5F62;&#x5BE6;&#x9A57;&#x4E4B;&#x5916;&#xFF0C;&#x4E5F;&#x5E38;&#x5E38;&#x6703;&#x9032;&#x884C;&#x5C07;&#x5730;&#x8868;&#x5206;&#x985E;&#x66FF;&#x63DB;&#x70BA;&#x6D77;&#x6D0B;&#x7684; Ocean Run&#xFF0C;&#x4EE5;&#x85C9;&#x6B64;&#x6AA2;&#x9A57;&#x5730;&#x8868;&#x7279;&#x6027;&#x3001;&#x6D0B;&#x9762;&#x901A;&#x91CF;&#x5C0D;&#x6B64;&#x5BE6;&#x9A57;&#x4E4B;&#x5F71;&#x97FF;&#x3002;</p>
+<p><strong>&#x4F46;&#x662F;&#x554F;&#x984C;&#x4F86;&#x4E86;&#xFF0C;&#x5730;&#x8868;&#x5206;&#x985E;&#x662F;&#x66FF;&#x63DB;&#x6389;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x5730;&#x8868;&#x6EAB;&#x5EA6;&#x5462;&#xFF1F;</strong></p>
+<p>&#x7531;&#x65BC;&#x5C07;&#x5730;&#x8868;&#x5206;&#x985E;&#x66FF;&#x63DB;&#x70BA;&#x6D77;&#x6D0B;&#x5F8C;&#xFF0C;&#x7D93;&#x7531;&#x6A21;&#x5F0F;&#x81EA;&#x884C;&#x5167;&#x63D2;&#x51FA;&#x4F86;&#x7684;&#x8868;&#x9762;&#x6EAB;&#x5EA6;&#xFF08;&#x6D77;&#x6EAB;&#xFF09;&#x53EF;&#x80FD;&#x4E0D;&#x5408;&#x7406;&#xFF0C;&#x4EE5;&#x53F0;&#x7063;&#x672C;&#x5CF6;&#x9019;&#x7A2E;&#x9AD8;&#x8073;&#x5730;&#x5F62;&#x70BA;&#x4F8B;&#xFF0C;&#x9AD8;&#x5C71;&#x5730;&#x5340;&#x7684;&#x5730;&#x8868;&#x6EAB;&#x5EA6;&#x4E00;&#x5B9A;&#x660E;&#x986F;&#x4F4E;&#x65BC;&#x6D0B;&#x9762;&#x6EAB;&#x5EA6;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x9019;&#x500B;&#x5047;&#x60F3;&#x7684; Ocean Run &#x4E2D;&#xFF0C;&#x9019;&#x584A;&#x539F;&#x672C;&#x662F;&#x9678;&#x5730;&#x7684;&#x300C;&#x6D77;&#x6D0B;&#x300D;&#x6703;&#x6709;&#x8457;&#x76F8;&#x5C0D;&#x5468;&#x906D;&#x6D77;&#x57DF;&#x8F03;&#x51B7;&#x7684;&#x7570;&#x5E38;&#x5340;&#x57DF;&#x5B58;&#x5728;&#xFF0C;&#x9019;&#x7A2E;&#x7570;&#x5E38;&#x4F4E;&#x6EAB;&#x7684;&#x60C5;&#x6CC1;&#x5728;&#x6D77;&#x6D0B;&#x4E0A;&#x4E0D;&#x5927;&#x53EF;&#x80FD;&#x51FA;&#x73FE;&#xFF0C;&#x6B64;&#x6642;&#x5C31;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x6A21;&#x64EC;&#x6240;&#x7528;&#x7684;&#x6D77;&#x6EAB;&#x5206;&#x5E03;&#x8CC7;&#x6599;&#x4F86;&#x8B93;&#x4ED6;&#x770B;&#x8D77;&#x4F86;&#x300C;&#x6B63;&#x5E38;&#x300D;&#x9EDE;&#xFF0C;&#x7136;&#x800C;&#xFF0C;&#x6EAB;&#x5EA6;&#x5206;&#x5E03;&#x53C8;&#x8A72;&#x63A1;&#x7528;&#x54EA;&#x7A2E;&#x5206;&#x5E03;&#x5462;&#xFF1F;&#x9577;&#x671F;&#x5E73;&#x5747;&#xFF1F;&#x7DDA;&#x6027;&#x5167;&#x63D2;&#xFF1F;&#x751A;&#x81F3;&#x662F; spline &#x5167;&#x63D2;&#xFF1F;&#x9019;&#x7A2E;&#x654F;&#x611F;&#x5EA6;&#x5BE6;&#x9A57;&#x7684;&#x72C0;&#x6CC1;&#x672C;&#x4F86;&#x5C31;&#x4E0D;&#x5B58;&#x5728;&#x65BC;&#x73FE;&#x5BE6;&#x4E4B;&#x4E2D;&#xFF0C;&#x6240;&#x4EE5;&#x9078;&#x7528;&#x54EA;&#x7A2E;&#x5206;&#x5E03;&#xFF0C;&#x751A;&#x81F3;&#x662F;&#x4E0D;&#x505A;&#x4EFB;&#x4F55;&#x6539;&#x8B8A;&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x8A0E;&#x8AD6;&#x7684;&#xFF0C;&#x7AEF;&#x770B;&#x4F60;&#x5E0C;&#x671B;&#x900F;&#x904E;&#x9019;&#x500B;&#x5BE6;&#x9A57;&#x770B;&#x51FA;&#x4EC0;&#x9EBC;&#x3002;</p>
+<h2 id="&#x9032;&#x884C;&#x4FEE;&#x6539;&#xFF1A;">&#x9032;&#x884C;&#x4FEE;&#x6539;&#xFF1A;</h2>
+<p>&#x958B;&#x59CB;&#x4FEE;&#x6539;&#x53EF;&#x4EE5;&#x5148;&#x770B;&#x4E00;&#x4E0B;&#x9019;&#x5F35;&#x53D6;&#x81EA; MM5 OnLine Tutorial - SST Note &#x7684;&#x6D77;&#x6EAB;&#x5206;&#x5E03;&#x5716;&#xFF1A;
+<img src="images/SST.gif" alt="&#x6D77;&#x6EAB;&#x5716;"></p>
+<p>&#x5F9E;&#x5716;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x9019;&#x88E1;&#x7684;&#x300C;&#x6D77;&#x6EAB;&#x300D;&#x9023;&#x9678;&#x5730;&#x4E0A;&#x90FD;&#x6709;&#x503C;&#xFF0C;&#x4E0D;&#x904E;&#x4E0D;&#x7528;&#x64D4;&#x5FC3;&#xFF0C;&#x6839;&#x64DA;&#x7DDA;&#x4E0A;&#x6559;&#x5B78;&#x7684;&#x8AAA;&#x660E;&#x9678;&#x4E0A;&#x7684;&#x503C;&#x6C92;&#x6709;&#x4EFB;&#x4F55;&#x610F;&#x7FA9;&#xFF0C;&#x53EA;&#x662F;&#x7D93;&#x7531;MM5&#x81EA;&#x5DF1;&#x5167;&#x63D2;&#x7522;&#x751F;&#x800C;&#x6210;&#x7684;&#x3002;</p>
+<p>&#x7136;&#x800C;&#xFF0C;&#x5728;&#x8868;&#x9762;&#x6EAB;&#x5EA6;&#xFF08;SkinTemperature&#xFF09;&#x9019;&#x500B;&#x8B8A;&#x6578;&#x88E1;&#xFF0C;&#x5247;&#x662F;&#x5305;&#x542B;&#x4E86;&#x9678;&#x5730;&#x3001;&#x6D77;&#x6D0B;&#x7684;&#x6EAB;&#x5EA6;&#x8CC7;&#x6599;&#xFF0C;&#x5F9E;&#x4E0B;&#x5716;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x5169;&#x5F35;&#x5716;&#x7684;&#x6D77;&#x6EAB;&#x5DEE;&#x7570;&#x4E0D;&#x5927;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x8868;&#x9762;&#x6EAB;&#x5EA6;&#x7684;&#x5716;&#x88E1;&#x6709;&#x8868;&#x73FE;&#x51FA;&#x9678;&#x5730;&#x7684;&#x6EAB;&#x5EA6;&#x7279;&#x6027;&#x4F86;&#x3002;&#x53E6;&#x5916;&#x7531;&#x65BC;&#x6D77;&#x9678;&#x7684;&#x6EAB;&#x5DEE;&#x8F03;&#x5927;&#xFF0C;&#x5728;&#x4EA4;&#x754C;&#x8655;&#x4E5F;&#x5C31;&#x7406;&#x6240;&#x7576;&#x7136;&#x7684;&#x6703;&#x6709;&#x8457;&#x76F8;&#x7576;&#x5927;&#x7684;&#x6EAB;&#x5EA6;&#x68AF;&#x5EA6;&#x3002;
+<img src="images/SkinT.gif" alt="&#x8868;&#x9762;&#x6EAB;&#x5EA6;&#x5716;"></p>
+<p>&#x5728; REGRID &#x88E1;&#x9762;&#x5C0D;&#x9019;&#x5169;&#x500B;&#x5834;&#x7684;&#x8655;&#x7406;&#x65B9;&#x5F0F;&#x662F;&#x4E00;&#x6A23;&#x7684;&#xFF0C;&#x4E0D;&#x904E;&#x7A0D;&#x5F8C;&#x5728; INTERPF &#x7A0B;&#x5F0F;&#x4E2D;&#x5C31;&#x4E0D;&#x4E00;&#x6A23;&#x4E86;&#x3002;</p>
+<p>&#x5728; INTERPF &#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x7A0B;&#x5F0F;&#x5728;&#x8B80;&#x53D6;&#x4F86;&#x81EA; REGIRD &#x7684;&#x8CC7;&#x6599;&#x6642;&#x6709;&#x627E;&#x5230; SST &#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x90A3;&#x5C31;&#x6703;&#x5C07;&#x5176;&#x5B58;&#x5165; TSEASFC &#x9019;&#x500B;&#x8B8A;&#x6578;&#x88E1;&#xFF0C;&#x7136;&#x5F8C;&#x7528;&#x4ED6;&#x7684;&#x8CC7;&#x6599;&#x7576;&#x4F5C;&#x6C34;&#x9AD4;&#x7684;&#x8868;&#x9762;&#x6EAB;&#x5EA6;&#x4F86;&#x88FD;&#x4F5C;&#x4E0B;&#x908A;&#x754C;&#x5834;&#xFF08;&#x9019;&#x500B;&#x8B8A;&#x6578;&#x662F;&#x53EF;&#x4EE5;&#x96A8;&#x6642;&#x9593;&#x8B8A;&#x5316;&#x7684;&#xFF09;&#x7A0B;&#x5F0F;&#x4E5F;&#x6703;&#x4F9D;&#x64DA;<strong>&#x6D77;&#x9678;&#x5206;&#x5E03;&#x7684;&#x906E;&#x7F69;</strong>&#x81EA;&#x52D5;&#x5224;&#x65B7;&#x54EA;&#x88E1;&#x8981;&#x7528; SST &#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x54EA;&#x88E1;&#x8981;&#x7528;&#x5730;&#x8868;&#x6EAB;&#x5EA6;&#x7684;&#x8CC7;&#x6599;&#x3002;&#x53CD;&#x4E4B;&#xFF0C;&#x5982;&#x679C;&#x6C92;&#x6709;&#x627E;&#x5230; SST &#x7684;&#x8CC7;&#x6599;&#x800C;&#x53EA;&#x6709;&#x8868;&#x9762;&#x6EAB;&#x5EA6;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x90A3;&#x5C31;&#x6703;&#x5C07;&#x6B64;&#x8868;&#x9762;&#x6EAB;&#x5EA6;&#x6240;&#x6709;&#x6642;&#x9593;&#x7684;&#x503C;&#x505A;&#x5E73;&#x5747;&#xFF0C;&#x7522;&#x751F;&#x4E00;&#x500B;&#x4E0D;&#x96A8;&#x6642;&#x9593;&#x8B8A;&#x52D5;&#x7684; TSEASFC &#x6D77;&#x6EAB;&#x5834;&#x4F9B;&#x6A21;&#x5F0F;&#x4F7F;&#x7528;&#xFF0C;&#x9019;&#x500B;&#x5E73;&#x5747;&#x7684;&#x76EE;&#x7684;&#x5C31;&#x662F;&#x8981;&#x79FB;&#x9664;&#x5728;&#x5E73;&#x5747;&#x7684;&#x6D77;&#x6EAB;&#x5834;&#x4E2D;&#xFF0C;&#x9678;&#x5730;&#x56E0;&#x65E5;&#x591C;&#x8B8A;&#x5316;&#x800C;&#x9020;&#x6210;&#x7684;&#x6EAB;&#x5EA6;&#x5DEE;&#x7570;&#x3002;</p>
+<p>&#x5288;&#x54E9;&#x556A;&#x5566;&#x8AAA;&#x4E86;&#x9019;&#x9EBC;&#x591A;&#xFF0C;&#x4F46;&#x6700;&#x95DC;&#x9375;&#x7684;&#x9EDE;&#x5C31;&#x662F;&#xFF1A;&#x300C;&#x6A21;&#x5F0F;&#x6703;&#x81EA;&#x52D5;&#x4F9D;&#x64DA;&#x6D77;&#x9678;&#x906E;&#x7F69;&#xFF0C;&#x4F86;&#x6C7A;&#x5B9A;&#x54EA;&#x500B;&#x4F4D;&#x7F6E;&#x8981;&#x8ABF;&#x7528;&#x6D77;&#x6EAB;&#x8CC7;&#x6599;&#xFF0C;&#x54EA;&#x500B;&#x4F4D;&#x7F6E;&#x8981;&#x8ABF;&#x7528;&#x8868;&#x9762;&#x6EAB;&#x5EA6;&#x8CC7;&#x6599;&#x300D;&#x3002;&#x7136;&#x800C;&#x9700;&#x4E0D;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x6D77;&#x6EAB;&#x5247;&#x53EF;&#x4EE5;&#x5148;&#x5C07; MMINPUT &#x7684;&#x8CC7;&#x6599;&#x6293;&#x51FA;&#x4F86;&#x7E6A;&#x5716;&#xFF08;SST &#x8207; TG&#xFF09;&#xFF0C;&#x770B;&#x770B;&#x6A21;&#x5F0F;&#x9810;&#x8655;&#x7406;&#x5F8C;&#x7684;&#x7D50;&#x679C;&#x5982;&#x4F55;&#xFF1A;
+<img src="images/Ocean-SST-Orig.png" alt="&#x539F;&#x59CB;&#x6D77;&#x6EAB;&#x5716;">
+<img src="images/Ocean-TG-Orig.png" alt="&#x539F;&#x59CB;&#x5730;&#x8868;&#x6EAB;&#x5EA6;&#x5716;"></p>
+<p>&#x4E0A;&#x9762;&#x9019;&#x5169;&#x5F35;&#x6D77;&#x6EAB;&#x8207;&#x5730;&#x8868;&#x6EAB;&#x5EA6;&#x5716;&#x6700;&#x660E;&#x986F;&#x7684;&#x5DEE;&#x5225;&#x9664;&#x4E86;&#x6EAB;&#x5EA6;&#x7684;&#x4E0D;&#x540C;&#x4E4B;&#x5916;&#xFF0C;&#x5C31;&#x662F;&#x5728;&#x5730;&#x8868;&#x6EAB;&#x5EA6;&#x4E2D; Domain &#x897F;&#x5317;&#x65B9;&#x7684;&#x4E2D;&#x570B;&#x6CBF;&#x6D77;&#x4EE5;&#x53CA;&#x6771;&#x65B9;&#x7684;&#x65E5;&#x672C;&#x7409;&#x7403;&#x7FA4;&#x5CF6;&#x4E0A;&#x6709;&#x8457;&#x8F03;&#x9AD8;&#x7684;&#x5730;&#x8868;&#x6EAB;&#x5EA6;&#xFF0C;&#x800C; Domain &#x4E2D;&#x9593;&#x7684;&#x4F4E;&#x503C;&#x5C31;&#x662F;&#x6211;&#x60F3;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x5C0D;&#x9019;&#x4E9B;&#x8B8A;&#x6578;&#x6709;&#x521D;&#x6B65;&#x7684;&#x4E86;&#x89E3;&#x4E4B;&#x5F8C;&#x5C31;&#x53EF;&#x4EE5;&#x958B;&#x59CB;&#x52D5;&#x624B;&#x5566;&#xFF01;&#x9996;&#x5148;&#x8981;&#x5148;&#x6E96;&#x5099;&#x597D;&#x5DF2;&#x7D93;&#x4FEE;&#x6539;&#x597D;&#x7684;&#x4E8C;&#x9032;&#x4F4D;&#x4E8C;&#x7DAD;&#x6D77;&#x6EAB;&#x5206;&#x4F48;&#x683C;&#x9EDE;&#x8CC7;&#x6599;&#xFF0C;&#x683C;&#x9EDE;&#x6578;&#x8981;&#x8DDF;&#x4F60;&#x7684; domain &#x8A2D;&#x5B9A;&#x4E00;&#x6A23;&#xFF08;&#x4EE5;&#x6B64;&#x70BA;&#x4F8B;&#x53EB;&#x505A; SSTok.dat&#xFF0C;&#x4E8C;&#x9032;&#x4F4D;&#x6A94;&#xFF09;&#x8981;&#x6E96;&#x5099;&#x9019;&#x8CC7;&#x6599;&#x6700;&#x7C21;&#x55AE;&#x7684;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x62FF;&#x539F;&#x672C;&#x6A21;&#x5F0F;&#x8F38;&#x51FA;&#x7684;&#x7684;&#x6D77;&#x6EAB;&#x8CC7;&#x6599;&#x4F86;&#x4FEE;&#x6539;&#x3002;</p>
+<p>&#x4FEE;&#x6539;&#x8981;&#x7531; INTERPF/src/modual_all_io.F &#x9019;&#x88E1;&#x958B;&#x59CB;&#x3002;(&#x4F9B;&#x6A21;&#x5F0F;&#x6A21;&#x64EC;&#x7528;&#x7684;&#x6D77;&#x6EAB;&#x8CC7;&#x6599;&#x4F3C;&#x4E4E;&#x662F;&#x6703;&#x51FA;&#x73FE;&#x5728;&#x521D;&#x59CB;&#x5834;&#x8CC7;&#x6599; MMINPUT &#x4EE5;&#x53CA;&#x908A;&#x754C;&#x5834;&#x8CC7;&#x6599; LOWBDY &#x9019;&#x5169;&#x500B;&#x6A94;&#x6848;&#x88E1;&#x9762;)
+&#x6703;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x88E1;&#x9762;&#x7684; add_lbc &#x4EE5;&#x53CA; outmodel &#x9019;&#x5169;&#x500B;&#x526F;&#x7A0B;&#x5F0F;</p>
+<ul>
+<li><p>&#x82E5;&#x624B;&#x908A;&#x6C92;&#x6709;&#x6D77;&#x6EAB;&#x8CC7;&#x6599;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x5728;&#x9019;&#x6A94;&#x6848;&#x88E1;&#x9762;&#x52A0;&#x5165;&#x4E00;&#x6BB5;&#x7A0B;&#x5F0F;&#x78BC;&#x8B93;&#x5B83;&#x8F38;&#x51FA; tseasfc &#x9019;&#x500B;&#x8B8A;&#x6578;&#xFF08;&#x61C9;&#x8A72;&#x662F; Temperature - Sea Surface &#x7684;&#x7E2E;&#x5BEB;&#x5427;&#xFF09;&#x628A;&#x9019;&#x88E1;&#x7684;&#x503C;&#x6539;&#x6210;&#x4F60;&#x60F3;&#x8981;&#x7684;&#x5206;&#x4F48;&#x60C5;&#x6CC1;&#x5F8C;&#x518D;&#x585E;&#x56DE;&#x4F86;&#x3002;</p>
+</li>
+<li><p>&#x4FEE;&#x6539; add_lbc&#xFF08;&#x6211;&#x731C;&#x9019;&#x662F; add lower bounday condition &#x7684;&#x7E2E;&#x5BEB;&#xFF09;&#x526F;&#x7A0B;&#x5F0F;&#xFF0C;&#x627E;&#x5230;&#x4E0B;&#x9762;&#x9019;&#x6BB5;&#xFF1A;</p>
+<pre><code>  WRITE ( unit_lowerbc )
+  tseasfc_sh%num_dims , tseasfc_sh%start_dims ,
+  tseasfc_sh%end_dims , tseasfc_sh%xtime , &amp;
+  tseasfc_sh%staggering , tseasfc_sh%ordering ,&amp;
+  tseasfc_sh%current_date , tseasfc_sh%name,&amp;
+  tseasfc_sh%units , tseasfc_sh%description
+  ! &#x4EE5;&#x4E0B;&#x9019;&#x500B;&#x90E8;&#x4EFD;&#x5927;&#x6982;&#x53EA;&#x6709; i,j &#x9700;&#x8981;&#x53E6;&#x5916;&#x5BA3;&#x544A;,tseasfc &#x662F;&#x539F;&#x672C;&#x653E;&#x6D77;&#x6EAB;&#x8CC7;&#x6599;&#x7684;&#x5730;&#x65B9;
+  !===== Overwrite SST from here by Cypresslin
+  ! &#x4FEE;&#x6539;&#x958B;&#x59CB;
+  ! I think this is for LOWBDY
+  ! MMINPUT SST should be modified at subroutine outmodel for readin SST data
+  open(99,file=&quot;SSTok.dat&quot;,access=&quot;direct&quot;,form=&quot;unformatted&quot;,recl=4*ie*je,status=&quot;old&quot;)
+      read(99,rec=1) ((tseasfc(i,j),j=1,je),i=1,ie)
+      ! &#x8B80;&#x9032;&#x65B0;&#x7684;&#x6D77;&#x6EAB;&#x8CC7;&#x6599;
+      print*,&quot;=== Modifing LOWBDY SST ===&quot;
+  close(99)
+  all_2d(16)%array(is:ie,js:je)=tseasfc
+  ! &#x96A8;&#x5F8C;&#x7A0B;&#x5F0F;&#x6703;&#x5728;&#x9019;&#x628A;&#x5B83;&#x5BEB;&#x5165; LOWBDY &#x4E2D;
+  ! &#x6D77;&#x6EAB;&#x8CC7;&#x6599;&#x5728; all_2d &#x4E2D;&#x662F;&#x7B2C; 16 &#x7B46;&#xFF0C;&#x5728;&#x9019;&#x628A;&#x5B83;&#x653E;&#x9032;&#x53BB;
+  ! &#x4FEE;&#x6539;&#x7D50;&#x675F;
+  WRITE ( unit_lowerbc ) tseasfc ! Specific things for surface air temperature small header.
+</code></pre></li>
+</ul>
+<p>&#x82E5;&#x64D4;&#x5FC3;&#x6D77;&#x6EAB;&#x4E0D;&#x662F; all_2d &#x4E2D;&#x7B2C; 16 &#x7B46;&#x8CC7;&#x6599;&#x7684;&#x8A71;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x8FF4;&#x5708;&#x4E2D;&#x52A0;&#x5165;&#x5224;&#x65B7;&#x5F0F;&#x6BD4;&#x5C0D; all_2d(loop)%small_header%name &#x662F;&#x4E0D;&#x662F; TSEASFC&#xFF0C;&#x7136;&#x5F8C;&#x518D;&#x6C7A;&#x5B9A;&#x8981;&#x4E0D;&#x8981;&#x66FF;&#x63DB;&#x6389;&#x88E1;&#x9762;&#x7684;&#x8CC7;&#x6599;&#x3002;</p>
+<ul>
+<li>&#x4FEE;&#x6539; outmodel&#xFF0C;&#x65BC; WRITE ( immout ) ps0 &#x7684;&#x5F8C;&#x9762;&#x52A0;&#x5165;&#x8B80;&#x53D6;&#x6D77;&#x6EAB;&#x8CC7;&#x6599;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#xFF0C;&#x4F5C;&#x6CD5;&#x8DDF;&#x524D;&#x9762;&#x5927;&#x81F4;&#x4E00;&#x6A23;&#xFF0C;&#x5982;&#x4E0B;:<pre><code>  ! (&#x9019;&#x88E1;&#x9664;&#x4E86;&#x5BA3;&#x544A; i,j &#x9084;&#x6709; tseasfc &#x8981;&#x5BA3;&#x544A;)
+  integer :: i,j
+  real :: tseasfc(ie,je) ! for Read-In SST Dat
+  WRITE ( immout )
+  WRITE ( immout )
+  num_dims , start_dims , end_dims , xtime , staggering , &amp;
+  ordering , current_date , name , units , description
+  ps0
+  ! Since we do not want to do lots of name checking, the easiest thing to
+  ! do is pass all of the 2d fields through. We have to modify the size of
+  ! the arrays (possibly) to account for the expanded / unexpanded input.
+  ! &#x4FEE;&#x6539;&#x958B;&#x59CB;,&#x4F5C;&#x6CD5;&#x8DDF;&#x5148;&#x524D;&#x4E00;&#x6A23;,&#x8B80;&#x5165;&#x6D77;&#x6EAB;&#x7136;&#x5F8C;&#x66FF;&#x63DB;&#x8CC7;&#x6599;
+  ! Cypresslin for readin SST data
+  open(99,file=&quot;SSTok.dat&quot;,access=&quot;direct&quot;,form=&quot;unformatted&quot;,recl=4*ie*je,status=&quot;old&quot;)
+      read(99,rec=1) ((tseasfc(i,j),j=1,je),i=1,ie)
+      print*,&quot;=== Modifing LOWBDY SST ===&quot;
+  close(99)
+  all_2d(16)%array(is:ie,js:je)=tseasfc ! 2D field number 16 is the SST field in MMINPUT
+  ! &#x4FEE;&#x6539;&#x7D50;&#x675F;
+  ! &#x5F8C;&#x9762;&#x5C31;&#x662F;&#x7A0B;&#x5F0F;&#x81EA;&#x5DF1;&#x7528;&#x8FF4;&#x5708;&#x5BEB;&#x5165;&#x8CC7;&#x6599;&#x4E86;&#xFF0C;&#x4E0D;&#x7528;&#x7BA1;&#x4ED6;
+  DO loop = 1 , num_2d
+      IF ( all_2d(loop)%small_header%ordering(1:2) .EQ. &apos;YX&apos; ) THEN
+      WRITE ( immout ) sh_flag
+</code></pre></li>
+</ul>
+<p>&#x4FEE;&#x6539;&#x7D50;&#x675F;&#x5F8C;&#x8ACB;&#x56DE;&#x5230;INTERPF&#x4E2D;&#x91CD;&#x65B0;&#x7DE8;&#x8B6F;&#x3002;</p>
+<h2 id="&#x9A57;&#x8B49;&#x4FEE;&#x6539;&#x7D50;&#x679C;">&#x9A57;&#x8B49;&#x4FEE;&#x6539;&#x7D50;&#x679C;</h2>
+<p>&#x5728;&#x4FEE;&#x6539;&#x7D50;&#x675F;&#x4E4B;&#x5F8C;&#xFF0C;&#x5F37;&#x70C8;&#x5EFA;&#x8B70;&#x7528; MM5toGrADS &#x7B49;&#x8EDF;&#x9AD4;&#x5C07;&#x7D50;&#x679C;&#x756B;&#x51FA;&#x4F86;&#x770B;&#x770B;&#x6D77;&#x6EAB;&#x7684;&#x5206;&#x4F48;&#x662F;&#x4E0D;&#x662F;&#x4E00;&#x5982;&#x9810;&#x671F;&#x7684;&#x90A3;&#x6A23;&#x6709;&#x6210;&#x529F;&#x7684;&#x88AB;&#x4FEE;&#x6539;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x70BA;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#x4FEE;&#x6539;&#x5F8C;&#x7684;&#x503C;&#xFF1A;</p>
+<p><img src="images/Ocean-SST-Mod.png" alt="&#x4FEE;&#x6539;&#x5F8C;&#x7684;&#x6D77;&#x6EAB;"></p>
+<p>&#x9019;&#x88E1;&#x53EA;&#x6709;&#x4FEE;&#x6539; SST&#xFF0C;&#x6C92;&#x6709;&#x4FEE;&#x6539; TG&#xFF0C;&#x6240;&#x4EE5;&#x8868;&#x9762;&#x6EAB;&#x5EA6;&#x7684;&#x5716;&#x756B;&#x51FA;&#x4F86;&#x8DDF;&#x524D;&#x9762;&#x4E00;&#x6A21;&#x4E00;&#x6A23;&#x4ECD;&#x7136;&#x770B;&#x5F97;&#x5230;&#x90A3;&#x4E00;&#x584A;&#x7570;&#x5E38;&#x4F4E;&#x6EAB;&#x503C;&#x3002;&#x4E0D;&#x904E;&#x4E0D;&#x7528;&#x64D4;&#x5FC3;&#xFF0C;&#x5C31;&#x5982;&#x540C;&#x524D;&#x9762;&#x6240;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x6A21;&#x5F0F;&#x6703;&#x81EA;&#x5DF1;&#x7528;&#x6D77;&#x9678;&#x906E;&#x7F69;&#x5224;&#x65B7;&#x8981;&#x7528;&#x54EA;&#x88E1;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x7576;&#x539F;&#x672C;&#x662F;&#x9678;&#x5730;&#x7684;&#x5730;&#x65B9;&#x88AB;&#x6539;&#x6210;&#x6D77;&#x6D0B;&#x4E4B;&#x5F8C;&#x4ED6;&#x5C31;&#x6703;&#x7528;&#x6D77;&#x6EAB;&#x8CC7;&#x6599;&#x9019;&#x6A23;&#xFF0C;&#x5F9E;&#x6A21;&#x5F0F;&#x8F38;&#x51FA;&#xFF08;MMOUT_DOMAIN1_00&#xFF09;&#x4E2D;&#x53EF;&#x4EE5;&#x8B49;&#x5BE6;&#x9019;&#x4E00;&#x9EDE;&#x3002;&#x4E0B;&#x9762;&#x9019;&#x5169;&#x5F35;&#x5206;&#x5225;&#x662F;&#x6D77;&#x6EAB;&#x8F38;&#x51FA;&#xFF0C;&#x4EE5;&#x53CA;&#x8868;&#x9762;&#x6EAB;&#x5EA6;&#x7684;&#x8F38;&#x51FA;&#x503C;&#xFF08;&#x8ACB;&#x6CE8;&#x610F;&#x9678;&#x5730;&#x5340;&#x57DF;&#x7684;&#x6EAB;&#x5EA6;&#xFF09;&#xFF1A;
+<img src="images/Ocean-SST-Out.png" alt="&#x8F38;&#x51FA;&#x7684;&#x6D77;&#x6EAB;&#x503C;">
+<img src="images/Ocean-TG-Out.png" alt="&#x8F38;&#x51FA;&#x7684;&#x5730;&#x8868;&#x6EAB;&#x5EA6;&#x503C;"></p>
+<p>&#x800C;&#x5728;&#x6700;&#x5927;&#x5730;&#x8868;&#x98A8;&#x901F;&#x7684;&#x5F37;&#x5EA6;&#x4E0A;&#x4E5F;&#x4E00;&#x5982;&#x9810;&#x671F;&#x6709;&#x8457;&#x76F8;&#x7576;&#x986F;&#x8457;&#x7684;&#x5DEE;&#x7570;&#xFF1A;
+<img src="images/WindSpd.jpg" alt="&#x98A8;&#x901F;&#x6BD4;&#x8F03;"></p>
+<p>That&apos;s it, have fun!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="A-1-ModTER.html" class="navigation navigation-prev " aria-label="Previous page: 附錄 - 進階修改：修改 MM5 地形高度（地形敏感度測試）">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="A-3-NonSTDOP.html" class="navigation navigation-next " aria-label="Next page: 附錄 - 進階修改：非標準資料之輸出">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"附錄 - 進階修改：修改 MM5 海溫資料","level":"1.13","depth":1,"next":{"title":"附錄 - 進階修改：非標準資料之輸出","level":"1.14","depth":1,"path":"A-3-NonSTDOP.md","ref":"A-3-NonSTDOP.md","articles":[]},"previous":{"title":"附錄 - 進階修改：修改 MM5 地形高度（地形敏感度測試）","level":"1.12","depth":1,"path":"A-1-ModTER.md","ref":"A-1-ModTER.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"nothing-here"},"sharing":{"facebook":true,"twitter":true,"google":true,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","instapaper","instapaper"]},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"A-2-ModSST.md","mtime":"2021-03-28T14:57:54.989Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-28T14:58:25.228Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

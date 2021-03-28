@@ -1,0 +1,1167 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>附錄 - MM5 變數表 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="A-5-SubList.html" />
+    
+    
+    <link rel="prev" href="A-3-NonSTDOP.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0-Preparation.html">
+            
+                <a href="0-Preparation.html">
+            
+                    
+                    使用 MM5 的事前準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1-1-TERRAIN.html">
+            
+                <a href="1-1-TERRAIN.html">
+            
+                    
+                    前置資料處理：地形地貌
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="1-2-REGRID.html">
+            
+                <a href="1-2-REGRID.html">
+            
+                    
+                    前置資料處理 - 初始猜測場
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="1-3-LITTLE_R.html">
+            
+                <a href="1-3-LITTLE_R.html">
+            
+                    
+                    前置資料處理 - 客觀分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="1-4-INTERPF.html">
+            
+                <a href="1-4-INTERPF.html">
+            
+                    
+                    前置資料處理 - 垂直插值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="2-1-MM5.html">
+            
+                <a href="2-1-MM5.html">
+            
+                    
+                    進行模擬
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="3-1-MPPMM5.html">
+            
+                <a href="3-1-MPPMM5.html">
+            
+                    
+                    平行化運算 - MPPMM5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="3-2-OPENMP.html">
+            
+                <a href="3-2-OPENMP.html">
+            
+                    
+                    平行化運算 - OpenMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="4-1-INTERPB.html">
+            
+                <a href="4-1-INTERPB.html">
+            
+                    
+                    後處理 - 垂直插值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="5-1-MM5toGrADS.html">
+            
+                <a href="5-1-MM5toGrADS.html">
+            
+                    
+                    後處理 - 轉為GrADS格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="A-1-ModTER.html">
+            
+                <a href="A-1-ModTER.html">
+            
+                    
+                    附錄 - 進階修改：修改 MM5 地形高度（地形敏感度測試）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="A-2-ModSST.html">
+            
+                <a href="A-2-ModSST.html">
+            
+                    
+                    附錄 - 進階修改：修改 MM5 海溫資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="A-3-NonSTDOP.html">
+            
+                <a href="A-3-NonSTDOP.html">
+            
+                    
+                    附錄 - 進階修改：非標準資料之輸出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="A-4-VarList.html">
+            
+                <a href="A-4-VarList.html">
+            
+                    
+                    附錄 - MM5 變數表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="A-5-SubList.html">
+            
+                <a href="A-5-SubList.html">
+            
+                    
+                    附錄 - MM5 副程式對照表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Reference.html">
+            
+                <a href="Reference.html">
+            
+                    
+                    Reference / 致謝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >附錄 - MM5 變數表</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9644;&#x9304;---mm5-&#x8B8A;&#x6578;&#x8868;">&#x9644;&#x9304; - MM5 &#x8B8A;&#x6578;&#x8868;</h1>
+<p>&#x4EE5;&#x4E0B;&#x9019;&#x4E9B;&#x8B8A;&#x6578;&#x662F;&#x7576;&#x521D;&#x70BA;&#x4E86;&#x8AD6;&#x6587;&#x800C;&#x9678;&#x7E8C;&#x5F9E; MM5 (Version 3.5) &#x539F;&#x59CB;&#x7A0B;&#x5F0F;&#x78BC;&#x88E1;&#x6574;&#x7406;&#x51FA;&#x4F86;&#x7684;&#xFF0C;&#x6709;&#x9451;&#x65BC;&#x7576;&#x521D;&#x4E00;&#x76F4;&#x627E;&#x4E0D;&#x5230;&#x985E;&#x4F3C;&#x7684;&#x8B8A;&#x6578;&#x8868;&#x6240;&#x4EE5;&#x628A;&#x7576;&#x521D;&#x7684;&#x7B46;&#x8A18;&#x653E;&#x4E0A;&#x4F86;&#xFF0C;&#x4E0D;&#x904E;&#x8981;&#x6CE8;&#x610F;&#xFF1A;<strong> &#x7531;&#x65BC;&#x540C;&#x4E00;&#x500B;&#x8B8A;&#x6578;&#x540D;&#x7A31;&#x5728;&#x4E0D;&#x540C;&#x4F4D;&#x7F6E;&#x88E1;&#x53EF;&#x80FD;&#x6703;&#x7528;&#x4F86;&#x5B58;&#x653E;&#x4E0D;&#x540C;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x800C;&#x4E14;&#x4E5F;&#x53EF;&#x80FD;&#x96A8;&#x8457;&#x7248;&#x672C;&#x4E0D;&#x540C;&#x6709;&#x5DEE;&#x7570;&#xFF0C;&#x6240;&#x4EE5;&#x9019;&#x500B;&#x8868;&#x683C;&#x4E0D;&#x4FDD;&#x8B49;&#x5176;&#x6B63;&#x78BA;&#x6027;&#xFF0C;&#x4F7F;&#x7528;&#x6642;&#x8ACB;&#x914D;&#x5408; MM5 &#x624B;&#x518A;</strong></p>
+<p>&#x5E38;&#x6578;&#x5927;&#x591A;&#x53EF;&#x4EE5;&#x5728; MM5/domain/initial/param.F &#x88E1;&#x9762;&#x627E;&#x5230;&#xFF0C;&#x5404;&#x6B04;&#x4F4D;&#x88DC;&#x5145;&#x8AAA;&#x660E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x53C3;&#x8003; - &#x8A72;&#x884C;&#x7A0B;&#x5F0F;&#x78BC;&#x7684;&#x884C;&#x865F;&#x3002;</li>
+<li>&#x4F4D;&#x7F6E; - C &#x8868;&#x793A;&#x4EA4;&#x932F;&#x7DB2;&#x683C;&#x4E0A;&#x7684; Cross Point&#xFF0C;D &#x5247;&#x70BA;&#x4EA4;&#x932F;&#x7DB2;&#x683C;&#x4E0A;&#x7684; Dot Point</li>
+<li>&#x8B8A;&#x6578; XXXA &#x6307;&#x8B8A;&#x6578; XXX &#x5728;&#x7576;&#x524D; TimeStep &#x7684;&#x503C;&#xFF0C;&#x800C; XXXB &#x5247;&#x662F;&#x8B8A;&#x6578; XXX &#x5728;&#x524D;&#x4E00;&#x500B; TimeStep &#x7684;&#x503C;</li>
+<li>&#x6B64;&#x8655;&#x7684;&#x624B;&#x518A;&#x6307; MM5 Source Code Documentation</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x8B8A;&#x6578;</th>
+<th>&#x7DAD;&#x5EA6;</th>
+<th>&#x4F4D;&#x7F6E;</th>
+<th>&#x8026;&#x5408;</th>
+<th>&#x55AE;&#x4F4D;</th>
+<th>&#x5167;&#x5BB9;</th>
+<th>&#x53C3;&#x8003;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DX</td>
+<td>&#x5E38;&#x6578;</td>
+<td>-</td>
+<td>-</td>
+<td>m</td>
+<td>&#x7DB2;&#x683C;&#x9593;&#x8DDD;</td>
+<td>PARAM.583</td>
+</tr>
+<tr>
+<td>DX2/4/8/16</td>
+<td>&#x5E38;&#x6578;</td>
+<td>-</td>
+<td>-</td>
+<td>m</td>
+<td>2/4/8/16&#x500D;&#x7DB2;&#x683C;&#x9593;&#x8DDD;</td>
+<td>PARAM.1823</td>
+</tr>
+<tr>
+<td>IL</td>
+<td>&#x5E38;&#x6578;</td>
+<td>-</td>
+<td>-</td>
+<td>&#x7121;&#x55AE;&#x4F4D;</td>
+<td>&#x6A21;&#x5F0F;&#x5357;&#x5317;&#x5411;&#x9EDE;&#x6578;</td>
+<td></td>
+</tr>
+<tr>
+<td>JL</td>
+<td>&#x5E38;&#x6578;</td>
+<td>-</td>
+<td>-</td>
+<td>&#x7121;&#x55AE;&#x4F4D;</td>
+<td>&#x6A21;&#x5F0F;&#x6771;&#x897F;&#x5411;&#x9EDE;&#x6578;</td>
+<td></td>
+</tr>
+<tr>
+<td>ILX</td>
+<td>&#x5E38;&#x6578;</td>
+<td>-</td>
+<td>-</td>
+<td>&#x7121;&#x55AE;&#x4F4D;</td>
+<td>&#x6A21;&#x5F0F;&#x5357;&#x5317;&#x5411;&#x9EDE;&#x6578;-1</td>
+<td>INITTS.68</td>
+</tr>
+<tr>
+<td>JLX</td>
+<td>&#x5E38;&#x6578;</td>
+<td>-</td>
+<td>-</td>
+<td>&#x7121;&#x55AE;&#x4F4D;</td>
+<td>&#x6A21;&#x5F0F;&#x6771;&#x897F;&#x5411;&#x9EDE;&#x6578;-1</td>
+<td></td>
+</tr>
+<tr>
+<td>MIX</td>
+<td>&#x5E38;&#x6578;</td>
+<td>-</td>
+<td>-</td>
+<td>&#x7121;&#x55AE;&#x4F4D;</td>
+<td>&#x6A21;&#x5F0F;&#x6700;&#x5927;&#x5357;&#x5317;&#x5411;&#x9EDE;&#x6578;</td>
+<td>configure.user</td>
+</tr>
+<tr>
+<td>MJX</td>
+<td>&#x5E38;&#x6578;</td>
+<td>-</td>
+<td>-</td>
+<td>&#x7121;&#x55AE;&#x4F4D;</td>
+<td>&#x6A21;&#x5F0F;&#x6700;&#x5927;&#x6771;&#x897F;&#x5411;&#x9EDE;&#x6578;</td>
+<td>configure.user</td>
+</tr>
+<tr>
+<td>MKX</td>
+<td>&#x5E38;&#x6578;</td>
+<td>-</td>
+<td>-</td>
+<td>&#x7121;&#x55AE;&#x4F4D;</td>
+<td>Half-&#x3C3;&#x5C64;&#x4E4B;&#x5C64;&#x6578;</td>
+<td>configure.user</td>
+</tr>
+<tr>
+<td>PTOP</td>
+<td>&#x5E38;&#x6578;</td>
+<td>-</td>
+<td>-</td>
+<td>kPa</td>
+<td>&#x6A21;&#x5F0F;&#x5C64;&#x9802;&#x6C23;&#x58D3;&#x503C;</td>
+<td>&#x624B;&#x518A;/24SEP99.37</td>
+</tr>
+<tr>
+<td>PT</td>
+<td>&#x5E38;&#x6578;</td>
+<td>-</td>
+<td>-</td>
+<td>Pa</td>
+<td>&#x6A21;&#x5F0F;&#x5C64;&#x9802;&#x6C23;&#x58D3;&#x503C;</td>
+<td>SOLVE.241</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1</td>
+<td>-</td>
+<td>&#x5426;</td>
+<td>&#x7121;&#x55AE;&#x4F4D;</td>
+<td>Half-&#x3C3;&#x5C64;</td>
+<td>&#x624B;&#x518A;</td>
+</tr>
+<tr>
+<td>SIGMA</td>
+<td>1</td>
+<td>-</td>
+<td>&#x5426;</td>
+<td>&#x7121;&#x55AE;&#x4F4D;</td>
+<td>Full-&#x3C3;&#x5C64;</td>
+<td>PARAM.566</td>
+</tr>
+<tr>
+<td>DSIGMA</td>
+<td>1</td>
+<td>-</td>
+<td>&#x5426;</td>
+<td>&#x7121;&#x55AE;&#x4F4D;</td>
+<td>&#x5169;&#x3C3;&#x5C64;&#x7684;&#x5DEE;&#x7570;&#x91CF;</td>
+<td>&#x624B;&#x518A; / PARAM.567</td>
+</tr>
+<tr>
+<td>F</td>
+<td>2</td>
+<td>D</td>
+<td>&#x5426;</td>
+<td>1/s</td>
+<td>&#x67EF;&#x6C0F;&#x529B;</td>
+<td>&#x624B;&#x518A; / OUTTAP.951</td>
+</tr>
+<tr>
+<td>MSFD</td>
+<td>2</td>
+<td>D</td>
+<td>&#x5426;</td>
+<td>&#x7121;&#x55AE;&#x4F4D;</td>
+<td>&#x5730;&#x5716;&#x6BD4;&#x4F8B;&#x7684;&#x5012;&#x6578;</td>
+<td>&#x624B;&#x518A; / INITNEST.963</td>
+</tr>
+<tr>
+<td>MSFX</td>
+<td>2</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>&#x7121;&#x55AE;&#x4F4D;</td>
+<td>&#x5730;&#x5716;&#x6BD4;&#x4F8B;&#x7684;&#x5012;&#x6578;</td>
+<td>&#x624B;&#x518A; / INITNEST.971</td>
+</tr>
+<tr>
+<td>PBL</td>
+<td>2</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>m</td>
+<td>&#x908A;&#x754C;&#x5C64;&#x9AD8;&#x5EA6;</td>
+<td>&#x624B;&#x518A; / OUTTAP.1005</td>
+</tr>
+<tr>
+<td>PDOTA</td>
+<td>2</td>
+<td>D</td>
+<td>&#x5426;</td>
+<td>kPa</td>
+<td>Dot Point&#x4E0A;&#x7684;P*&#xFF0C;&#x4F86;&#x81EA;PSA</td>
+<td>INITNEST.940</td>
+</tr>
+<tr>
+<td>PDOTB</td>
+<td>2</td>
+<td>D</td>
+<td>&#x5426;</td>
+<td>kPa</td>
+<td>&#x540C;&#x4E0A;&#xFF0C;&#x4F46;&#x70BA;t-dt&#x4E4B;&#x7D50;&#x679C;</td>
+<td>INITNEST.952</td>
+</tr>
+<tr>
+<td>PS0</td>
+<td>2</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>Pa</td>
+<td>&#x53C3;&#x8003;&#x5730;&#x9762;&#x6C23;&#x58D3;&#xFF08;&#x8A3B;1&#xFF09;</td>
+<td>&#x624B;&#x518A; / RDINIT.426</td>
+</tr>
+<tr>
+<td>PSA</td>
+<td>2</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>kPa</td>
+<td>P*</td>
+<td>OUTTAP.838</td>
+</tr>
+<tr>
+<td>RAINC</td>
+<td>2</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>cm</td>
+<td>&#x7A4D;&#x96F2;&#x6027;&#x7D2F;&#x7A4D;&#x964D;&#x6C34;&#x91CF;</td>
+<td>&#x624B;&#x518A; / OUTTAP.866</td>
+</tr>
+<tr>
+<td>RAINNC</td>
+<td>2</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>cm</td>
+<td>&#x975E;&#x7A4D;&#x96F2;&#x6027;&#x7D2F;&#x7A4D;&#x964D;&#x6C34;&#x91CF;</td>
+<td>&#x624B;&#x518A; / OUTTAP.866</td>
+</tr>
+<tr>
+<td>RPSA</td>
+<td>2</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>1/kPa</td>
+<td>1/P*</td>
+<td>INIT.164</td>
+</tr>
+<tr>
+<td>RPSB</td>
+<td>2</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>1/kPa</td>
+<td>&#x540C;&#x4E0A;&#xFF0C;&#x4F46;&#x70BA;t-dt&#x4E4B;&#x7D50;&#x679C;</td>
+<td>INIT.165</td>
+</tr>
+<tr>
+<td>RPDOTA</td>
+<td>2</td>
+<td>D</td>
+<td>&#x5426;</td>
+<td>1/kPa</td>
+<td>1/P*</td>
+<td>INIT.173</td>
+</tr>
+<tr>
+<td>RPDOTB</td>
+<td>2</td>
+<td>D</td>
+<td>&#x5426;</td>
+<td>1/kPa</td>
+<td>&#x540C;&#x4E0A;&#xFF0C;&#x4F46;&#x70BA;t-dt&#x4E4B;&#x7D50;&#x679C;</td>
+<td>INIT.174</td>
+</tr>
+<tr>
+<td>SATBRT</td>
+<td>2</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>&#x7121;&#x55AE;&#x4F4D;</td>
+<td>&#x5730;&#x8868;&#x5206;&#x985E;</td>
+<td>&#x624B;&#x518A; / OUTTAP.979</td>
+</tr>
+<tr>
+<td>SNOWC</td>
+<td>2</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>&#x7121;&#x55AE;&#x4F4D;&#xFF08;&#x6216;mm&#xFF09;</td>
+<td>&#x662F;&#x5426;&#x6709;&#x7A4D;&#x96EA;&#xFF08;&#x6216;&#x96EA;&#x7684;&#x7B49;&#x91CF;&#x6C34;&#x91CF;&#xFF09;</td>
+<td>&#x624B;&#x518A; / 05DEC01.277&#xFF08;05DEC01.280&#xFF09;</td>
+</tr>
+<tr>
+<td>TGA</td>
+<td>2</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>K</td>
+<td>&#x5730;&#x9762;&#x6EAB;&#x5EA6;</td>
+<td>&#x624B;&#x518A; / OUTTAP.853</td>
+</tr>
+<tr>
+<td>TSS</td>
+<td>2</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>K</td>
+<td>&#x6D77;&#x8868;&#x9762;&#x6EAB;&#x5EA6;</td>
+<td>24SEP99.165</td>
+</tr>
+<tr>
+<td>XLAT</td>
+<td>2</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>&#x5EA6;</td>
+<td>&#x7DEF;&#x5EA6;</td>
+<td>&#x624B;&#x518A; / OUTTAP.965</td>
+</tr>
+<tr>
+<td>XLON</td>
+<td>2</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>&#x5EA6;</td>
+<td>&#x7D93;&#x5EA6;</td>
+<td>&#x624B;&#x518A; / OUTTAP.972</td>
+</tr>
+<tr>
+<td>PPA</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*Pa</td>
+<td>&#x8026;&#x5408;&#x64FE;&#x52D5;&#x58D3;&#x529B;&#x5834;&#xFF08;P*P&apos;&#xFF09;</td>
+<td>&#x624B;&#x518A; / OUTTAP.825</td>
+</tr>
+<tr>
+<td>PPB</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*Pa</td>
+<td>&#x540C;&#x4E0A;&#xFF0C;&#x4F46;&#x70BA;t-dt&#x4E4B;&#x7D50;&#x679C;</td>
+<td>&#x624B;&#x518A;</td>
+</tr>
+<tr>
+<td>PP3D</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>Pa</td>
+<td>&#x64FE;&#x52D5;&#x58D3;&#x529B;&#x5834;&#xFF08;P&apos;&#xFF09;</td>
+<td>SOLVE.204</td>
+</tr>
+<tr>
+<td>PR0</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>Pa</td>
+<td>&#x53C3;&#x8003;&#x58D3;&#x529B;&#x5834;&#xFF08;P0&#xFF09;</td>
+<td>RDINIT.430</td>
+</tr>
+<tr>
+<td>PR1</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>Pa</td>
+<td>&#x5B8C;&#x6574;&#x58D3;&#x529B;&#x5834; P</td>
+<td>SOLVE.253</td>
+</tr>
+<tr>
+<td>QV3D</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>kg/kg</td>
+<td>&#x6C34;&#x6C7D;&#x6DF7;&#x5408;&#x6BD4;&#xFF0C;DCPL3D (QVB,PSB)</td>
+<td>SOLVE.602</td>
+</tr>
+<tr>
+<td>QV3DTEN</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*kg/kg/dt</td>
+<td>&#x8026;&#x5408;&#x6C34;&#x6C7D;&#x6DF7;&#x5408;&#x6BD4;&#x8B8A;&#x5316;&#x8DA8;&#x52E2;&#x9805;</td>
+<td>SOLVE.1722</td>
+</tr>
+<tr>
+<td>QVA</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*kg/kg</td>
+<td>&#x8026;&#x5408;&#x6C34;&#x6C7D;&#x6DF7;&#x5408;&#x6BD4;&#xFF08;P*qv&#xFF09;</td>
+<td>&#x624B;&#x518A; / OUTTAP.700</td>
+</tr>
+<tr>
+<td>QVB</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*kg/kg</td>
+<td>&#x540C;&#x4E0A;&#xFF0C;&#x4F46;&#x70BA;t-dt&#x4E4B;&#x7D50;&#x679C;</td>
+<td>&#x624B;&#x518A;</td>
+</tr>
+<tr>
+<td>QC3D</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>kg/kg</td>
+<td>&#x96F2;&#x6C34;&#x6DF7;&#x5408;&#x6BD4;&#xFF0C;DCPL3D (QCB,PSB)</td>
+<td>SOLVE.604</td>
+</tr>
+<tr>
+<td>QC3DTEN</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*kg/kg/dt</td>
+<td>&#x8026;&#x5408;&#x96F2;&#x6C34;&#x6DF7;&#x5408;&#x6BD4;&#x8B8A;&#x5316;&#x8DA8;&#x52E2;&#x9805;</td>
+<td>SOLVE.1794</td>
+</tr>
+<tr>
+<td>QCA</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*kg/kg</td>
+<td>&#x8026;&#x5408;&#x96F2;&#x6C34;&#x6DF7;&#x5408;&#x6BD4;(P*qc)</td>
+<td>&#x624B;&#x518A; / OUTTAP.710</td>
+</tr>
+<tr>
+<td>QR3D</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>kg/kg</td>
+<td>&#x96F2;&#x6C34;&#x6DF7;&#x5408;&#x6BD4;(qc)</td>
+<td>SOLVE.218</td>
+</tr>
+<tr>
+<td>QR3DTEN</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*kg/kg/dt</td>
+<td>&#x8026;&#x5408;&#x96E8;&#x6C34;&#x6DF7;&#x5408;&#x6BD4;&#x8B8A;&#x5316;&#x8DA8;&#x52E2;&#x9805;</td>
+<td>SOLVE.1795</td>
+</tr>
+<tr>
+<td>QRA</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*kg/kg</td>
+<td>&#x8026;&#x5408;&#x96E8;&#x6C34;&#x6DF7;&#x5408;&#x6BD4;(P*qr)</td>
+<td>&#x624B;&#x518A; / OUTTAP.718</td>
+</tr>
+<tr>
+<td>QI3D</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>kg/kg</td>
+<td>&#x96F2;&#x51B0;&#x6DF7;&#x5408;&#x6BD4;(qi)</td>
+<td>SOLVE.224</td>
+</tr>
+<tr>
+<td>QI3DTEN</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*kg/kg/dt</td>
+<td>&#x8026;&#x5408;&#x96F2;&#x51B0;&#x6DF7;&#x5408;&#x6BD4;&#x8B8A;&#x5316;&#x8DA8;&#x52E2;&#x9805;</td>
+<td>SOLVE.1813</td>
+</tr>
+<tr>
+<td>QIA</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*kg/kg</td>
+<td>&#x8026;&#x5408;&#x96F2;&#x51B0;&#x6DF7;&#x5408;&#x6BD4;(P*qi)</td>
+<td>&#x624B;&#x518A; / OUTTAP.728</td>
+</tr>
+<tr>
+<td>QG3D</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>kg/kg</td>
+<td>&#x8EDF;&#x96F9;&#x6DF7;&#x5408;&#x6BD4;(qg)</td>
+<td>SOLVE.231</td>
+</tr>
+<tr>
+<td>QG3DTEN</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*kg/kg/dt</td>
+<td>&#x8026;&#x5408;&#x8EDF;&#x96F9;&#x6DF7;&#x5408;&#x6BD4;&#x8B8A;&#x5316;&#x8DA8;&#x52E2;&#x9805;</td>
+<td>SOLVE.1832</td>
+</tr>
+<tr>
+<td>QGA</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*kg/kg</td>
+<td>&#x8026;&#x5408;&#x8EDF;&#x96F9;&#x6DF7;&#x5408;&#x6BD4;(P*qg)</td>
+<td>&#x624B;&#x518A; / OUTTAP.747</td>
+</tr>
+<tr>
+<td>QNI3D</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>kg/kg</td>
+<td>&#x96EA;&#x7247;&#x6DF7;&#x5408;&#x6BD4;(qs)</td>
+<td>SOLVE.225</td>
+</tr>
+<tr>
+<td>QNI3DTEN</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*kg/kg/dt</td>
+<td>&#x8026;&#x5408;&#x96EA;&#x7247;&#x6DF7;&#x5408;&#x6BD4;&#x8B8A;&#x5316;&#x8DA8;&#x52E2;&#x9805;</td>
+<td>SOLVE.1814</td>
+</tr>
+<tr>
+<td>QNIA</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*kg/kg</td>
+<td>&#x8026;&#x5408;&#x96EA;&#x7247;&#x6DF7;&#x5408;&#x6BD4;(P*qs)</td>
+<td>&#x624B;&#x518A; / OUTTAP.736</td>
+</tr>
+<tr>
+<td>QNC3D</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>#/kg</td>
+<td>&#x96F2;&#x51B0;&#x7C92;&#x5B50;&#x6FC3;&#x5EA6;</td>
+<td>SOLVE.232</td>
+</tr>
+<tr>
+<td>QNCA</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*#/kg</td>
+<td>&#x8026;&#x5408;&#x96F2;&#x51B0;&#x7C92;&#x5B50;&#x6FC3;&#x5EA6;</td>
+<td>&#x624B;&#x518A; / OUTTAP.755</td>
+</tr>
+<tr>
+<td>RTTEN</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>K/s</td>
+<td>&#x5927;&#x6C23;&#x8F3B;&#x5C04;&#x8DA8;&#x52E2;</td>
+<td>OUTTAP.805</td>
+</tr>
+<tr>
+<td>T3D</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>K</td>
+<td>&#x6EAB;&#x5EA6;&#x5834;(T)</td>
+<td>SOLVE.203</td>
+</tr>
+<tr>
+<td>TA</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*K</td>
+<td>&#x8026;&#x5408;&#x6EAB;&#x5EA6;&#x5834;</td>
+<td>OUTTAP.681</td>
+</tr>
+<tr>
+<td>TB</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*K</td>
+<td>&#x540C;&#x4E0A;&#xFF0C;&#x4F46;&#x70BA;t-dt&#x4E4B;&#x7D50;&#x679C;</td>
+<td>SOLVE.598</td>
+</tr>
+<tr>
+<td>Tv</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>K</td>
+<td>&#x865B;&#x6EAB;&#xFF0C;&#x6240;&#x7528;&#x516C;&#x5F0F;&#x70BA; Tv=T3D*(1+0.608*qv*XMOIST)</td>
+<td>SOLVE.432</td>
+</tr>
+<tr>
+<td>T3DTEN</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*K</td>
+<td>&#x6EAB;&#x5EA6;&#x8DA8;&#x52E2;&#x9805;</td>
+<td>SOLVE.873</td>
+</tr>
+<tr>
+<td>U3D</td>
+<td>3</td>
+<td>D</td>
+<td>&#x5426;</td>
+<td>m/s</td>
+<td>U &#x98A8;&#x5834;</td>
+<td>SOLVE.186</td>
+</tr>
+<tr>
+<td>UA</td>
+<td>3</td>
+<td>D</td>
+<td>&#x662F;</td>
+<td>kPa*m/s</td>
+<td>&#x8026;&#x5408; U &#x98A8;&#x5834; (P*V)&#xFF08;&#x96A8;&#x5F8C;&#x8A72;&#x8B8A;&#x6578;&#x6703;&#x4E58;&#x4E0A;&#x5730;&#x5716;&#x6BD4;&#x4F8B;&#xFF09;</td>
+<td>&#x624B;&#x518A; (SOLVE.158)</td>
+</tr>
+<tr>
+<td>UB</td>
+<td>3</td>
+<td>D</td>
+<td>&#x662F;</td>
+<td>kPa*m/s</td>
+<td>&#x540C;&#x4E0A;&#xFF0C;&#x4F46;&#x70BA;t-dt&#x4E4B;&#x7D50;&#x679C;</td>
+<td>SOLVE.596</td>
+</tr>
+<tr>
+<td>UCC</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>m/s</td>
+<td>&#x4F4D;&#x5728; CrossPoint &#x4E0A;&#x7684; U &#x98A8;&#x5834;</td>
+<td>SOLVE.272</td>
+</tr>
+<tr>
+<td>V3D</td>
+<td>3</td>
+<td>D</td>
+<td>&#x5426;</td>
+<td>m/s</td>
+<td>V &#x98A8;&#x5834;</td>
+<td>SOLVE.186</td>
+</tr>
+<tr>
+<td>VA</td>
+<td>3</td>
+<td>D</td>
+<td>&#x662F;</td>
+<td>kPa*m/s</td>
+<td>&#x8026;&#x5408; V &#x98A8;&#x5834; (P*V)&#xFF08;&#x96A8;&#x5F8C;&#x8A72;&#x8B8A;&#x6578;&#x6703;&#x4E58;&#x4E0A;&#x5730;&#x5716;&#x6BD4;&#x4F8B;&#xFF09;</td>
+<td>&#x624B;&#x518A; (SOLVE.158)</td>
+</tr>
+<tr>
+<td>VB</td>
+<td>3</td>
+<td>D</td>
+<td>&#x662F;</td>
+<td>kPa*m/s</td>
+<td>&#x540C;&#x4E0A;&#xFF0C;&#x4F46;&#x70BA;t-dt&#x4E4B;&#x7D50;&#x679C;</td>
+<td>SOLVE.597</td>
+</tr>
+<tr>
+<td>VCC</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>m/s</td>
+<td>&#x4F4D;&#x5728; CrossPoint &#x4E0A;&#x7684; V &#x98A8;&#x5834;</td>
+<td>SOLVE.274</td>
+</tr>
+<tr>
+<td>W3D</td>
+<td>3</td>
+<td>C</td>
+<td>&#x5426;</td>
+<td>m/s</td>
+<td>W &#x98A8;&#x5834;</td>
+<td>SOLVE.205</td>
+</tr>
+<tr>
+<td>WA</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*m/s</td>
+<td>&#x8026;&#x5408; W &#x98A8;&#x5834; (P*W)</td>
+<td>OUTTAP.817</td>
+</tr>
+<tr>
+<td>WB</td>
+<td>3</td>
+<td>C</td>
+<td>&#x662F;</td>
+<td>kPa*m/s</td>
+<td>&#x540C;&#x4E0A;&#xFF0C;&#x4F46;&#x70BA;t-dt&#x4E4B;&#x7D50;&#x679C;</td>
+<td>SOLVE.599</td>
+</tr>
+</tbody>
+</table>
+<p>&#x8A3B;1&#xFF1A;&#x624B;&#x518A;&#x4E2D;&#x6307;&#x660E;&#x6B64;&#x8B8A;&#x6578;&#x70BA; Reference Surface Pressure&#xFF0C;&#x4F46;&#x5728;Code&#x4E2D; PS0=PSA&#xFF08;&#x55AE;&#x4F4D;&#x70BA; Pa&#xFF09;&#xFF0C;&#x900F;&#x904E; PR0 &#x7684;&#x65B9;&#x7A0B;&#x5F0F;&#xFF08;RDINIT.430&#xFF09;&#x4E5F;&#x53EF;&#x77E5; PS0 &#x4E0D;&#x55AE;&#x7D14;&#x662F; Ps&#xFF0C;&#x800C;&#x662F; Ps-Pt&#xFF08;&#x4E5F;&#x5C31;&#x662F; P*&#xFF09;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="A-3-NonSTDOP.html" class="navigation navigation-prev " aria-label="Previous page: 附錄 - 進階修改：非標準資料之輸出">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="A-5-SubList.html" class="navigation navigation-next " aria-label="Next page: 附錄 - MM5 副程式對照表">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"附錄 - MM5 變數表","level":"1.15","depth":1,"next":{"title":"附錄 - MM5 副程式對照表","level":"1.16","depth":1,"path":"A-5-SubList.md","ref":"A-5-SubList.md","articles":[]},"previous":{"title":"附錄 - 進階修改：非標準資料之輸出","level":"1.14","depth":1,"path":"A-3-NonSTDOP.md","ref":"A-3-NonSTDOP.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"nothing-here"},"sharing":{"facebook":true,"twitter":true,"google":true,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","instapaper","instapaper"]},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"A-4-VarList.md","mtime":"2021-03-28T14:57:54.989Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-28T14:58:25.228Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
