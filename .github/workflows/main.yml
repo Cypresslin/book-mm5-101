@@ -18,7 +18,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
-      MY_SECRET   : ${{secrets.GH_ACCESS_TOKEN}}
+      MY_SECRET   : ${{secrets.Gitbook}}
       USER_NAME   : Cypresslin
       USER_EMAIL  : Cypresslin@users.noreply.github.com
       BOOK_DIR    : book_sources
