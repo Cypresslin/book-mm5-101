@@ -5,7 +5,7 @@ REGRID 之目的在讀取氣壓層上的氣象分析資料，並把分析資料�
 REGRID 為 MM5 系統流程圖中的第二步，他需要來自 TERRAIN 程式的輸出作為其輸入，並為 RAWINS，LITTLE\_R，或是 INTERPF 產生輸入文件。
 
 REGRID概略圖：
-![REGRID Workflow](/images/regrid-workflow.gif)
+![REGRID Workflow](images/regrid-workflow.gif)
 
 ## REGRID 處理初始資料
 
